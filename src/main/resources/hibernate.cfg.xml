@@ -5,17 +5,9 @@
 
 <hibernate-configuration>
     <session-factory>
-        <mapping class="com.startopole.model.entity.Article" />
-        <mapping class="com.startopole.model.entity.Admin" />
-        <mapping class="com.startopole.model.entity.Fencer" />
-        <mapping class="com.startopole.model.entity.Coach" />
-        <mapping class="com.startopole.model.entity.UserRole" />
-        <mapping class="com.startopole.model.entity.UserInfo" />
-        <mapping class="com.startopole.model.entity.Gallery" />
-        <mapping class="com.startopole.model.entity.Section" />
-        <mapping class="com.startopole.model.entity.Event" />
-        <mapping class="com.startopole.model.entity.Category" />
-        <mapping class="com.startopole.model.entity.EventCategory" />
-        <mapping class="com.startopole.model.entity.Message" />
+        <mapping class="com.fencelive.model.entity.UserRole" />
+        <mapping class="com.fencelive.model.entity.UserInfo" />
+        <mapping class="com.fencelive.model.entity.Tournament" />
+        <mapping class="com.fencelive.model.entity.Fencer" />
     </session-factory>
 </hibernate-configuration>

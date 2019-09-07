@@ -7,20 +7,197 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72f61d8b-55b9-49a1-b282-c73a5e372f5b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/startopole/controller/AllUsersController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/all_users_management.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/fencelive.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/controller/FencersController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/controller/TournamentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/dao/FencerDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/dao/TournamentDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/dao/impl/FencerDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/dao/impl/TournamentDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/model/entity/Fencer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/model/entity/Tournament.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/model/viewModel/FencerViewModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/services/FencerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/services/TournamentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/services/impl/FencerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/services/impl/TournamentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fencers.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/newFencer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/newTournament.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/static/css/tournament.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/77d2076e-c0cc-4ce4-a054-4d1fa03921e9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/77d2076e-c0cc-4ce4-a054-4d1fa03921e9.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/configuration/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/startopole/configuration/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/controller/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/startopole/controller/UsersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/AdminDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/startopole/dao/AdminDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/CoachDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/startopole/dao/CoachDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/impl/AdminDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/startopole/dao/impl/AdminDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/impl/CoachDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/startopole/dao/impl/CoachDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/startopole/services/AdminService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/CoachService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/startopole/services/CoachService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/impl/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/startopole/services/impl/AdminServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/impl/CoachServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/startopole/services/impl/CoachServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/users_management.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/users_management.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/ServletInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/ServletInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/StartopoleApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/FenceliveApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/authentication/MyDBAuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/authentication/MyDBAuthenticationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/configuration/ApplicationContextConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/configuration/ApplicationContextConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/configuration/SpringWebAppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/configuration/SpringWebAppInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/configuration/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/configuration/WebMvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/configuration/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/configuration/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/controller/AdminPanelController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/controller/AllUsersController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/controller/ArticleController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/controller/CoachController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/controller/CoachPanelController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/controller/ContactController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/controller/EventController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/controller/GalleryController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/controller/HistoryController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/controller/MemberController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/controller/RegistrationController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/controller/TrainingController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/controller/UserPanelController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/controller/UsersController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/AdminDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/ArticleDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/CategoryDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/CoachDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/EventCategoryDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/EventDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/FencerDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/GalleryDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/MessageDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/SectionDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/UserInfoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/dao/UserInfoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/UserRoleDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/dao/UserRoleDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/impl/AdminDAOImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/impl/ArticleDAOImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/impl/CategoryDAOImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/impl/CoachDAOImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/impl/EventCategoryDAOImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/impl/EventDAOImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/impl/FencerDAOimpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/impl/GalleryDAOImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/impl/MessageDAOImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/impl/SectionDAOImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/impl/UserInfoDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/dao/impl/UserInfoDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/impl/UserRoleDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/dao/impl/UserRoleDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/mapper/UserInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/mapper/UserInfoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/model/entity/Admin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/model/entity/Article.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/model/entity/Category.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/model/entity/Coach.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/model/entity/Event.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/model/entity/EventCategory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/model/entity/Fencer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/model/entity/FormMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/model/entity/Gallery.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/model/entity/Message.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/model/entity/Section.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/model/entity/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/model/entity/UserInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/model/entity/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/model/entity/UserRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/model/viewModel/ArticlesViewModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/model/viewModel/EventsViewModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/model/viewModel/IndexViewModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/model/viewModel/MessageViewModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/model/viewModel/PanelFencerViewModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/model/viewModel/RegistrationViewModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/model/viewModel/UsersManagementViewModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/AdminService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/ArticleService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/CategoryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/CoachService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/EventCategoryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/EventService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/FencerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/GalleryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/MessageService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/SectionService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/UserInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/services/UserInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/UserRoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/services/UserRoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/impl/AdminServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/impl/ArticleServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/impl/CategoryServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/impl/CoachServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/impl/EventCategoryServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/impl/EventServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/impl/FencerServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/impl/GalleryServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/impl/MessageServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/impl/SectionServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/impl/UserInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/services/impl/UserInfoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/impl/UserRoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/services/impl/UserRoleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/datasource-cfg.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/datasource-cfg.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/403Page.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/adminPanel.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/album.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/all_users_management.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/articles.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/articles_management.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/coachFencerDetails.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/coachPanel.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/coaches.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/coaches_management.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/contact_management.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editArticle.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editCoach.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editContact.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editEvent.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editGallery.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editHistory.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editMember.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editTraining.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/events_management.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fencerDetails.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/galleries.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/galleries_management.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/history_management.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/members.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/members_management.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/newArticle.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/newCoach.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/newCoachMessage.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/newContact.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/newEvent.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/newGallery.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/newHistory.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/newMember.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/newMessage.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/newTraining.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/registration.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/trainings_management.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/userPanel.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/users_management.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/static/css/buttons.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/static/css/buttons.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/static/css/calendar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/static/css/gallery.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/static/css/index_style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/static/img/bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/static/img/logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/static/img/opole.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/uploaded/coaches/img_12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/uploaded/coaches/img_13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/uploaded/galleries/gallery14/img_0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/uploaded/galleries/gallery14/img_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/uploaded/galleries/gallery14/img_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/uploaded/galleries/gallery21/img_0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/uploaded/galleries/gallery21/img_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/uploaded/galleries/gallery21/img_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/uploaded/galleries/gallery21/img_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/uploaded/galleries/gallery21/img_4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/uploaded/galleries/gallery21/img_5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/uploaded/galleries/gallery22/img_0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/uploaded/galleries/gallery22/img_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/uploaded/galleries/gallery22/img_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/uploaded/galleries/gallery22/img_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/uploaded/galleries/gallery22/img_4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/uploaded/galleries/gallery23/img_0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/uploaded/galleries/gallery23/img_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/uploaded/img_4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/uploaded/img_41.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/uploaded/img_5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/uploaded/img_6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/uploaded/img_7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/startopole.iml" beforeDir="false" afterPath="$PROJECT_DIR$/fencelive.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -48,21 +225,25 @@
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Heroku-MySQL" type="feb32156:DbDataSourceImpl" />
+        <item name="RemoteMySQL" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="RemoteMySQL" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Heroku-MySQL" type="feb32156:DbDataSourceImpl" />
+        <item name="RemoteMySQL" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="heroku_cbfaca119ac653b: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="qJKm6WWXvl: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Heroku-MySQL" type="feb32156:DbDataSourceImpl" />
+        <item name="RemoteMySQL" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="heroku_cbfaca119ac653b: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="article: table" type="285a2a93:MysqlImplModel$Table" />
+        <item name="qJKm6WWXvl: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="FENCERS: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -70,37 +251,94 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/all_users_management.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/controller/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="83" column="19" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
+            <state relative-caret-position="360">
+              <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="51" column="29" lean-forward="true" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/startopole/controller/AllUsersController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fencers.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="145" column="42" lean-forward="true" selection-start-line="145" selection-start-column="42" selection-end-line="145" selection-end-column="42" />
+            <state relative-caret-position="218">
+              <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+              <folding>
+                <element signature="e#4008#4015#1#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/startopole/configuration/WebSecurityConfig.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/controller/FencersController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="681">
-              <caret line="72" column="86" lean-forward="true" selection-start-line="72" selection-start-column="86" selection-end-line="72" selection-end-column="86" />
+            <state relative-caret-position="-9">
+              <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f3454ed1-fc40-4c3e-b009-1667b2250c19/console.sql">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/newFencer.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="25" lean-forward="true" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+            <state relative-caret-position="-43">
+              <caret line="50" column="91" lean-forward="true" selection-start-line="50" selection-start-column="91" selection-end-line="50" selection-end-column="91" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/static/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="389">
+              <caret line="40" column="24" lean-forward="true" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/77d2076e-c0cc-4ce4-a054-4d1fa03921e9/console_1.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="57" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/controller/TournamentController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="663">
+              <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -111,12 +349,12 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="spring-beans.schema" />
-        <option value="CSS File" />
         <option value="JavaScript File" />
-        <option value="Interface" />
         <option value="HTML File" />
-        <option value="Jsp File" />
+        <option value="CSS File" />
+        <option value="Interface" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -146,42 +384,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/startopole/model/entity/Message.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/startopole/dao/impl/MessageDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/coachPanel.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/adminPanel.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/startopole/controller/AdminPanelController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/startopole/controller/CoachPanelController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/userPanel.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/startopole/model/viewModel/MessageViewModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/startopole/controller/UserPanelController.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/77d2076e-c0cc-4ce4-a054-4d1fa03921e9/console.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/com/startopole/model/entity/FormMessage.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/static/css/subpage.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/static/css/style.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/articles_management.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/coaches_management.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/contact_management.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/events_management.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/galleries_management.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/history_management.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/members_management.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/trainings_management.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/startopole/email/EmailSender.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/startopole/email/EmailSenderImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/template.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/startopole/controller/TemplateEngine.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/startopole/StartopoleApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/startopole/controller/EmailController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/static/css/index_style.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/startopole/controller/MainController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/startopole/controller/ArticleController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/startopole/services/impl/ArticleServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/startopole/dao/impl/ArticleDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/datasource-cfg.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/startopole/services/CoachService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/startopole/services/AdminService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/startopole/services/impl/CoachServiceImpl.java" />
@@ -197,6 +406,35 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/all_users_management.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/startopole/controller/RegistrationController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/startopole/controller/AllUsersController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fencelive/configuration/ApplicationContextConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fencelive/configuration/WebSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/static/css/buttons.css" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fencelive/dao/TournamentDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fencelive/dao/impl/TournamentDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fencelive/services/TournamentService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fencelive/services/impl/TournamentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/static/css/tournament.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/newTournament.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fencelive/model/entity/Tournament.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/datasource-cfg.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fencelive/controller/NewTournamentController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fencelive/controller/TournamentController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fencelive/controller/MainController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fencelive/dao/FencerDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fencelive/dao/impl/FencerDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fencelive/services/FencerService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fencelive/services/impl/FencerServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fencelive/model/entity/Fencer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fencelive/model/viewModel/FencerViewModel.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/newFencer.jsp" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/77d2076e-c0cc-4ce4-a054-4d1fa03921e9/console_1.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fencelive/controller/FencersController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/static/css/style.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fencers.jsp" />
       </list>
     </option>
   </component>
@@ -227,7 +465,7 @@
     </treeState>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="714" />
     <option name="height" value="900" />
   </component>
@@ -239,145 +477,194 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="startopole" type="b2602c69:ProjectViewProjectNode" />
-              <item name="startopole" type="462c0819:PsiDirectoryNode" />
+              <item name="fencelive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fencelive" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="startopole" type="b2602c69:ProjectViewProjectNode" />
-              <item name="startopole" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="startopole" type="b2602c69:ProjectViewProjectNode" />
-              <item name="startopole" type="462c0819:PsiDirectoryNode" />
+              <item name="fencelive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fencelive" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="startopole" type="b2602c69:ProjectViewProjectNode" />
-              <item name="startopole" type="462c0819:PsiDirectoryNode" />
+              <item name="fencelive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fencelive" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="startopole" type="b2602c69:ProjectViewProjectNode" />
-              <item name="startopole" type="462c0819:PsiDirectoryNode" />
+              <item name="fencelive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fencelive" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="startopole" type="b2602c69:ProjectViewProjectNode" />
-              <item name="startopole" type="462c0819:PsiDirectoryNode" />
+              <item name="fencelive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fencelive" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="startopole" type="462c0819:PsiDirectoryNode" />
+              <item name="fencelive" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="startopole" type="b2602c69:ProjectViewProjectNode" />
-              <item name="startopole" type="462c0819:PsiDirectoryNode" />
+              <item name="fencelive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fencelive" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="startopole" type="462c0819:PsiDirectoryNode" />
+              <item name="fencelive" type="462c0819:PsiDirectoryNode" />
+              <item name="authentication" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fencelive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fencelive" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="fencelive" type="462c0819:PsiDirectoryNode" />
               <item name="configuration" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="startopole" type="b2602c69:ProjectViewProjectNode" />
-              <item name="startopole" type="462c0819:PsiDirectoryNode" />
+              <item name="fencelive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fencelive" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="startopole" type="462c0819:PsiDirectoryNode" />
+              <item name="fencelive" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="startopole" type="b2602c69:ProjectViewProjectNode" />
-              <item name="startopole" type="462c0819:PsiDirectoryNode" />
+              <item name="fencelive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fencelive" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="startopole" type="462c0819:PsiDirectoryNode" />
+              <item name="fencelive" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="startopole" type="b2602c69:ProjectViewProjectNode" />
-              <item name="startopole" type="462c0819:PsiDirectoryNode" />
+              <item name="fencelive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fencelive" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="startopole" type="462c0819:PsiDirectoryNode" />
+              <item name="fencelive" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="startopole" type="b2602c69:ProjectViewProjectNode" />
-              <item name="startopole" type="462c0819:PsiDirectoryNode" />
+              <item name="fencelive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fencelive" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="startopole" type="462c0819:PsiDirectoryNode" />
+              <item name="fencelive" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fencelive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fencelive" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="fencelive" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="startopole" type="b2602c69:ProjectViewProjectNode" />
-              <item name="startopole" type="462c0819:PsiDirectoryNode" />
+              <item name="fencelive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fencelive" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="startopole" type="462c0819:PsiDirectoryNode" />
+              <item name="fencelive" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
               <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="startopole" type="b2602c69:ProjectViewProjectNode" />
-              <item name="startopole" type="462c0819:PsiDirectoryNode" />
+              <item name="fencelive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fencelive" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="startopole" type="462c0819:PsiDirectoryNode" />
+              <item name="fencelive" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
               <item name="viewModel" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="startopole" type="b2602c69:ProjectViewProjectNode" />
-              <item name="startopole" type="462c0819:PsiDirectoryNode" />
+              <item name="fencelive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fencelive" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="fencelive" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fencelive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fencelive" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="fencelive" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fencelive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fencelive" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="startopole" type="b2602c69:ProjectViewProjectNode" />
-              <item name="startopole" type="462c0819:PsiDirectoryNode" />
+              <item name="fencelive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fencelive" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="startopole" type="b2602c69:ProjectViewProjectNode" />
-              <item name="startopole" type="462c0819:PsiDirectoryNode" />
+              <item name="fencelive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fencelive" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="startopole" type="b2602c69:ProjectViewProjectNode" />
-              <item name="startopole" type="462c0819:PsiDirectoryNode" />
+              <item name="fencelive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fencelive" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fencelive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fencelive" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fencelive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fencelive" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="startopole" type="b2602c69:ProjectViewProjectNode" />
-              <item name="startopole" type="462c0819:PsiDirectoryNode" />
+              <item name="fencelive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fencelive" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
@@ -388,18 +675,21 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564656038465" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567882869017" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="E:/Pobrane/slf4j-1.7.26/slf4j-1.7.26/slf4j-simple-1.7.26.jar!/" />
@@ -413,18 +703,18 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/resources" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/resources/static" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Panels" />
+      <recent name="C:\Users\Paweł\IdeaProjects\startopole\src\main\resources\templates\user" />
+      <recent name="$PROJECT_DIR$/src/main/webapp" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="templates" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.startopole.controller" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Panels" />
-      <recent name="C:\Users\Paweł\IdeaProjects\startopole\src\main\resources\templates\user" />
-      <recent name="$PROJECT_DIR$/src/main/webapp" />
-      <recent name="$PROJECT_DIR$/src/main/resources/static/css" />
-      <recent name="$PROJECT_DIR$/src/main" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -439,10 +729,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.StartopoleApplication">
-    <configuration name="StartopoleApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="startopole" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.startopole.StartopoleApplication" />
+  <component name="RunManager" selected="Spring Boot.FenceliveApplication">
+    <configuration name="FenceliveApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="fencelive" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fencelive.FenceliveApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -590,6 +881,7 @@
         <option name="BuildArtifacts" enabled="true">
           <artifact name="startopole:war" />
           <artifact name="startopole:war exploded" />
+          <artifact name="fencelive:war" />
         </option>
       </method>
     </configuration>
@@ -603,7 +895,7 @@
     </configuration>
     <list>
       <item itemvalue="Heroku Deployment.Heroku-Startopole" />
-      <item itemvalue="Spring Boot.StartopoleApplication" />
+      <item itemvalue="Spring Boot.FenceliveApplication" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.14" />
     </list>
   </component>
@@ -643,6 +935,7 @@
       <workItem from="1556141527861" duration="106354000" />
       <workItem from="1559280987346" duration="28060000" />
       <workItem from="1560612548667" duration="18802000" />
+      <workItem from="1566299300586" duration="40238000" />
     </task>
     <task id="LOCAL-00011" summary="Added Maven dependencies to POM">
       <created>1553802411923</created>
@@ -991,7 +1284,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="437378000" />
+    <option name="totallyTimeSpent" value="477616000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1003,9 +1296,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22031474" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22317597" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1131,7 +1424,6 @@
       <path value="$PROJECT_DIR$" />
       <path value="$USER_HOME$/Library/Mobile Documents/com~apple~CloudDocs/Documents/PWR/VI Semestr/ZTW" />
     </ignored-roots>
-    <MESSAGE value="Font size of calendar" />
     <MESSAGE value="Main page improvements" />
     <MESSAGE value="CSS improvements" />
     <MESSAGE value="Fixed navbar in mobile version" />
@@ -1156,348 +1448,14 @@
     <MESSAGE value="POM changes" />
     <MESSAGE value="Contact form improvements" />
     <MESSAGE value="Fixed encoding" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed encoding" />
+    <MESSAGE value="Adding tournaments and fencers database" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding tournaments and fencers database" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/trainings_management.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="115" column="14" selection-start-line="115" selection-start-column="14" selection-end-line="115" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/static/css/subpage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2062">
-          <caret line="172" column="1" selection-start-line="172" selection-start-column="1" selection-end-line="172" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/startopole/controller/TemplateEngine.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/startopole/StartopoleApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="65" lean-forward="true" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/startopole/email/EmailSenderImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="55" lean-forward="true" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/startopole/email/EmailSender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="62" selection-start-line="3" selection-start-column="62" selection-end-line="3" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/articles_management.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="105" column="115" lean-forward="true" selection-start-line="105" selection-start-column="115" selection-end-line="105" selection-end-column="115" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/403Page.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="63" column="31" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/startopole/model/entity/FormMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-          <folding>
-            <element signature="e#402#403#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/startopole/controller/EmailController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/static/css/index_style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="58" column="20" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="195" column="94" selection-start-line="195" selection-start-column="94" selection-end-line="195" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="80" column="21" selection-start-line="80" selection-start-column="21" selection-end-line="80" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editArticle.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/startopole/controller/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="60" selection-start-line="24" selection-start-column="60" selection-end-line="24" selection-end-column="60" />
-          <folding>
-            <element signature="e#2237#2238#0" expanded="true" />
-            <element signature="e#2267#2268#0" expanded="true" />
-            <element signature="e#4500#4743#0" expanded="true" />
-            <element signature="e#4742#4743#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/startopole/model/viewModel/ArticlesViewModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/startopole/services/impl/CategoryServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/startopole/services/impl/ArticleServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="18" column="58" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/77d2076e-c0cc-4ce4-a054-4d1fa03921e9/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-335">
-          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/datasource-cfg.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="119" selection-start-line="6" selection-start-column="119" selection-end-line="6" selection-end-column="119" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/startopole/controller/ArticleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="79" column="36" lean-forward="true" selection-start-line="79" selection-start-column="36" selection-end-line="79" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/startopole/model/entity/Article.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="23" column="50" lean-forward="true" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/newArticle.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="54" lean-forward="true" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/startopole/dao/impl/ArticleDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="16" column="75" selection-start-line="16" selection-start-column="75" selection-end-line="16" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/startopole/services/UserInfoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/startopole/services/CoachService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/startopole/services/impl/UserInfoServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/startopole/services/AdminService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="32" lean-forward="true" selection-start-column="32" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/startopole/dao/CoachDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/startopole/dao/AdminDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/startopole/dao/impl/UserInfoDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="41" column="79" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/startopole/services/impl/AdminServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="39" column="39" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
-          <folding>
-            <element signature="e#928#929#0" expanded="true" />
-            <element signature="e#966#967#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/startopole/services/impl/CoachServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="39" column="40" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
-          <folding>
-            <element signature="e#921#922#0" expanded="true" />
-            <element signature="e#951#952#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/startopole/dao/impl/CoachDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="33" column="76" lean-forward="true" selection-start-line="33" selection-start-column="76" selection-end-line="33" selection-end-column="76" />
-          <folding>
-            <element signature="e#940#941#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/startopole/dao/impl/AdminDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="33" column="76" lean-forward="true" selection-start-line="33" selection-start-column="76" selection-end-line="33" selection-end-column="76" />
-          <folding>
-            <element signature="e#855#856#0" expanded="true" />
-            <element signature="e#941#942#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/startopole/dao/impl/UserRoleDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/startopole/dao/UserRoleDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f3454ed1-fc40-4c3e-b009-1667b2250c19/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="25" lean-forward="true" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/users_management.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="62" column="21" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/startopole/model/viewModel/RegistrationViewModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/startopole/model/entity/UserInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/startopole/model/entity/UserRole.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1515,13 +1473,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/startopole/configuration/WebSecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="681">
-          <caret line="72" column="86" lean-forward="true" selection-start-line="72" selection-start-column="86" selection-end-line="72" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/registration.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -1536,6 +1487,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/startopole/controller/AllUsersController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1980">
+          <caret line="151" column="50" selection-start-line="151" selection-start-column="50" selection-end-line="151" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/all_users_management.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="251">
@@ -1543,10 +1501,373 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/startopole/controller/AllUsersController.java">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f3454ed1-fc40-4c3e-b009-1667b2250c19/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="145" column="42" lean-forward="true" selection-start-line="145" selection-start-column="42" selection-end-line="145" selection-end-column="42" />
+        <state relative-caret-position="15">
+          <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/authentication/MyDBAuthenticationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/configuration/SpringWebAppInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/configuration/WebMvcConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/configuration/WebSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="716">
+          <caret line="60" column="72" lean-forward="true" selection-start-line="60" selection-start-column="72" selection-end-line="60" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fencelive.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/static/css/subpage.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/static/css/gallery.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/static/css/index_style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="58" column="20" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/dao/UserRoleDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/dao/impl/UserRoleDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/dao/impl/UserInfoDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/dao/impl/TournamentDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#474#475#0" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
+            <element signature="e#595#596#0" expanded="true" />
+            <element signature="e#637#638#0" expanded="true" />
+            <element signature="e#705#706#0" expanded="true" />
+            <element signature="e#727#728#0" expanded="true" />
+            <element signature="e#450#451#0" expanded="true" />
+            <element signature="e#477#478#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/services/UserInfoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/services/TournamentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/services/impl/UserInfoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="36" lean-forward="true" selection-start-column="36" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/services/impl/TournamentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#582#583#0" expanded="true" />
+            <element signature="e#617#618#0" expanded="true" />
+            <element signature="e#707#708#0" expanded="true" />
+            <element signature="e#736#737#0" expanded="true" />
+            <element signature="e#820#821#0" expanded="true" />
+            <element signature="e#848#849#0" expanded="true" />
+            <element signature="e#940#941#0" expanded="true" />
+            <element signature="e#994#995#0" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#579#580#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/dao/TournamentDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="36" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/model/entity/UserRole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/static/css/tournament.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/model/entity/UserInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/configuration/ApplicationContextConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/77d2076e-c0cc-4ce4-a054-4d1fa03921e9/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="100" column="46" selection-start-line="100" selection-start-column="46" selection-end-line="100" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="84" column="21" selection-start-line="84" selection-start-column="21" selection-end-line="84" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/datasource-cfg.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/model/entity/Tournament.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="38" column="110" selection-start-line="38" selection-start-column="110" selection-end-line="38" selection-end-column="110" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/dao/impl/FencerDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="106" selection-start-line="38" selection-start-column="106" selection-end-line="38" selection-end-column="106" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#450#451#0" expanded="true" />
+            <element signature="e#475#476#0" expanded="true" />
+            <element signature="e#559#560#0" expanded="true" />
+            <element signature="e#581#582#0" expanded="true" />
+            <element signature="e#665#666#0" expanded="true" />
+            <element signature="e#717#718#0" expanded="true" />
+            <element signature="e#410#411#0" expanded="true" />
+            <element signature="e#437#438#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/dao/FencerDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/services/FencerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/services/impl/FencerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" column="33" lean-forward="true" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#554#555#0" expanded="true" />
+            <element signature="e#575#576#0" expanded="true" />
+            <element signature="e#663#664#0" expanded="true" />
+            <element signature="e#687#688#0" expanded="true" />
+            <element signature="e#768#769#0" expanded="true" />
+            <element signature="e#802#803#0" expanded="true" />
+            <element signature="e#432#433#0" expanded="true" />
+            <element signature="e#459#460#0" expanded="true" />
+            <element signature="e#999#1000#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/controller/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="51" column="29" lean-forward="true" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="57" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/static/css/buttons.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/newTournament.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/controller/TournamentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/model/entity/Fencer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="657">
+          <caret line="64" column="44" lean-forward="true" selection-start-line="64" selection-start-column="44" selection-end-line="64" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1165#1166#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/model/viewModel/FencerViewModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="54" column="5" lean-forward="true" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/newFencer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-43">
+          <caret line="50" column="91" lean-forward="true" selection-start-line="50" selection-start-column="91" selection-end-line="50" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/77d2076e-c0cc-4ce4-a054-4d1fa03921e9/console_1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/controller/FencersController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9">
+          <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="40" column="24" lean-forward="true" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fencers.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+          <folding>
+            <element signature="e#4008#4015#1#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
