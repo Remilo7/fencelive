@@ -41,6 +41,12 @@ public class FencerServiceImpl implements FencerService {
 
     @Override
     @Transactional
+    public List getEqualFencer(String name, String surname, int year) {
+        return fencerDAO.getEqualFencer(name, surname, year);
+    }
+
+    @Override
+    @Transactional
     public List getAllFencers() {
         return fencerDAO.getAllFencers();
     }

@@ -6,7 +6,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Baza szermierzy</title>
+    <title>Listy klasyfikacyjne</title>
 
     <meta charset="UTF-8">
 
@@ -22,7 +22,7 @@
 <div class="container-fluid">
     <div class="row header-row-medium">
         <div class="container-fluid text-center">
-            <h1>Baza szermierzy</h1>
+            <h1>Listy klasyfikacyjne</h1>
         </div>
     </div>
 
@@ -34,33 +34,27 @@
 
             <input class="form-control" id="myInput" type="text" placeholder="Search..">
 
-            <form:form action="fencers.do" method="post" modelAttribute="fencer">
+            <form:form action="lists.do" method="post" modelAttribute="list">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="fencers-table">
-                        <table class="table table-hover table-responsive">
-                            <thead>
-                            <tr>
-                                <th />
-                                <th>Nazwisko i imię</th>
-                                <th>Klub</th>
-                                <th>Kraj</th>
-                                <th>Data urodzenia</th>
-                            </tr>
-                            </thead>
+                            <table class="table table-hover table-responsive">
+                                <thead>
+                                <tr>
+                                    <th />
+                                    <th>Nazwa</th>
+                                </tr>
+                                </thead>
 
-                            <tbody id="myTable">
-                                <c:forEach items="${fencerList}" var="fencer">
+                                <tbody id="myTable">
+                                <c:forEach items="${listList}" var="list">
                                     <tr>
-                                        <td><form:checkbox path="idList" value="${fencer.id}"/></td>
-                                        <td>${fencer.name}</td>
-                                        <td>${fencer.club}</td>
-                                        <td>${fencer.country}</td>
-                                        <td>${fencer.year}</td>
+                                        <td><form:radiobutton path="id" value="${list.id}"/></td>
+                                        <td>${list.name}</td>
                                     </tr>
                                 </c:forEach>
-                            </tbody>
-                        </table>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -73,8 +67,7 @@
                     <div class="col-md-6">
                         <div class="button-box-horizontal">
                             <button class="btn btn-red btn-border" type="submit" name="action" value="Delete">Usuń</button>
-                            <button type="button" class="btn btn-blue btn-border" data-toggle="modal" data-target="#myModal">Importuj z pliku</button>
-                            <button class="btn btn-green btn-border" name="action" value="add">Dodaj</button>
+                            <button type="button" class="btn btn-green btn-border" data-toggle="modal" data-target="#myModal">Dodaj</button>
                         </div>
                     </div>
                 </div>
@@ -87,21 +80,23 @@
 <!-- Modal -->
 <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
-        <form:form action="fencers.do" method="post" modelAttribute="fencer" enctype="multipart/form-data">
+        <form:form action="lists.do" method="post" modelAttribute="list" enctype="multipart/form-data">
 
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Wybierz plik .xlsx</h4>
+                    <h4 class="modal-title">Wprowadź nazwę i wybierz plik .xlsx</h4>
                 </div>
 
                 <div class="modal-body">
+                    <form:input type="text" path="name" class="form-control" placeholder="Wprowadź nazwę listy" required="required" maxlength="100" />
+                    <br><br>
                     <input name="file" id="fileToUpload" type="file" />
                 </div>
 
                 <div class="modal-footer">
                     <div class="button-box-center">
-                        <button class="btn btn-green btn-border" name="action" value="import">Importuj</button>
+                        <button class="btn btn-green btn-border" name="action" value="add">Dodaj</button>
                     </div>
                 </div>
             </div>

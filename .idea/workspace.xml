@@ -7,197 +7,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72f61d8b-55b9-49a1-b282-c73a5e372f5b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/fencelive.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/controller/FencersController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/controller/TournamentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/dao/FencerDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/dao/TournamentDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/dao/impl/FencerDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/dao/impl/TournamentDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/model/entity/Fencer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/model/entity/Tournament.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/model/viewModel/FencerViewModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/services/FencerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/services/TournamentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/services/impl/FencerServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/services/impl/TournamentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fencers.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/newFencer.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/newTournament.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/static/css/tournament.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/controller/ListsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/dao/ListDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/dao/impl/ListDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/model/entity/List.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/services/ListService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/services/impl/ListServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/lists.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/77d2076e-c0cc-4ce4-a054-4d1fa03921e9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/77d2076e-c0cc-4ce4-a054-4d1fa03921e9.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/ServletInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/ServletInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/StartopoleApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/FenceliveApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/authentication/MyDBAuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/authentication/MyDBAuthenticationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/configuration/ApplicationContextConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/configuration/ApplicationContextConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/configuration/SpringWebAppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/configuration/SpringWebAppInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/configuration/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/configuration/WebMvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/configuration/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/configuration/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/controller/AdminPanelController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/controller/AllUsersController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/controller/ArticleController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/controller/CoachController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/controller/CoachPanelController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/controller/ContactController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/controller/EventController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/controller/GalleryController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/controller/HistoryController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/controller/MemberController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/controller/RegistrationController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/controller/TrainingController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/controller/UserPanelController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/controller/UsersController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/AdminDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/ArticleDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/CategoryDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/CoachDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/EventCategoryDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/EventDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/FencerDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/GalleryDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/MessageDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/SectionDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/UserInfoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/dao/UserInfoDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/UserRoleDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/dao/UserRoleDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/impl/AdminDAOImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/impl/ArticleDAOImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/impl/CategoryDAOImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/impl/CoachDAOImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/impl/EventCategoryDAOImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/impl/EventDAOImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/impl/FencerDAOimpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/impl/GalleryDAOImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/impl/MessageDAOImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/impl/SectionDAOImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/impl/UserInfoDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/dao/impl/UserInfoDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/dao/impl/UserRoleDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/dao/impl/UserRoleDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/mapper/UserInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/mapper/UserInfoMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/model/entity/Admin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/model/entity/Article.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/model/entity/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/model/entity/Coach.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/model/entity/Event.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/model/entity/EventCategory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/model/entity/Fencer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/model/entity/FormMessage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/model/entity/Gallery.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/model/entity/Message.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/model/entity/Section.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/model/entity/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/model/entity/UserInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/model/entity/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/model/entity/UserRole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/model/viewModel/ArticlesViewModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/model/viewModel/EventsViewModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/model/viewModel/IndexViewModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/model/viewModel/MessageViewModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/model/viewModel/PanelFencerViewModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/model/viewModel/RegistrationViewModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/model/viewModel/UsersManagementViewModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/AdminService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/ArticleService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/CategoryService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/CoachService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/EventCategoryService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/EventService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/FencerService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/GalleryService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/MessageService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/SectionService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/UserInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/services/UserInfoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/UserRoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/services/UserRoleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/impl/AdminServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/impl/ArticleServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/impl/CategoryServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/impl/CoachServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/impl/EventCategoryServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/impl/EventServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/impl/FencerServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/impl/GalleryServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/impl/MessageServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/impl/SectionServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/impl/UserInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/services/impl/UserInfoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/startopole/services/impl/UserRoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/services/impl/UserRoleServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/datasource-cfg.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/datasource-cfg.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fencelive/controller/FencersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/controller/FencersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fencelive/dao/FencerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/dao/FencerDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fencelive/dao/impl/FencerDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/dao/impl/FencerDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fencelive/services/FencerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/services/FencerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fencelive/services/impl/FencerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/services/impl/FencerServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/403Page.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/adminPanel.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/album.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/all_users_management.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/articles.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/articles_management.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/coachFencerDetails.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/coachPanel.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/coaches.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/coaches_management.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/contact_management.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editArticle.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editCoach.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editContact.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editEvent.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editGallery.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editHistory.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editMember.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editTraining.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/events_management.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fencerDetails.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/galleries.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/galleries_management.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/history_management.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fencers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fencers.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/members.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/members_management.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/newArticle.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/newCoach.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/newCoachMessage.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/newContact.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/newEvent.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/newGallery.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/newHistory.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/newMember.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/newMessage.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/newTraining.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/registration.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/trainings_management.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/userPanel.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/users_management.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/static/css/buttons.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/static/css/buttons.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/static/css/calendar.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/static/css/gallery.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/static/css/index_style.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/static/img/bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/static/img/logo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/static/img/opole.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/uploaded/coaches/img_12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/uploaded/coaches/img_13.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/uploaded/galleries/gallery14/img_0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/uploaded/galleries/gallery14/img_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/uploaded/galleries/gallery14/img_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/uploaded/galleries/gallery21/img_0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/uploaded/galleries/gallery21/img_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/uploaded/galleries/gallery21/img_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/uploaded/galleries/gallery21/img_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/uploaded/galleries/gallery21/img_4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/uploaded/galleries/gallery21/img_5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/uploaded/galleries/gallery22/img_0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/uploaded/galleries/gallery22/img_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/uploaded/galleries/gallery22/img_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/uploaded/galleries/gallery22/img_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/uploaded/galleries/gallery22/img_4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/uploaded/galleries/gallery23/img_0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/uploaded/galleries/gallery23/img_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/uploaded/img_4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/uploaded/img_41.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/uploaded/img_5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/uploaded/img_6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/uploaded/img_7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/startopole.iml" beforeDir="false" afterPath="$PROJECT_DIR$/fencelive.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -251,13 +79,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/controller/MainController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fencers.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="529">
+              <caret line="127" column="7" selection-start-line="127" selection-start-column="7" selection-end-line="127" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -265,20 +90,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="51" column="29" lean-forward="true" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
+            <state relative-caret-position="459">
+              <caret line="39" column="106" lean-forward="true" selection-start-line="39" selection-start-column="106" selection-end-line="39" selection-end-column="106" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fencers.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/lists.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
-              <folding>
-                <element signature="e#4008#4015#1#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="415">
+              <caret line="92" column="28" selection-start-line="92" selection-start-column="28" selection-end-line="92" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/controller/ListsController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-317">
+              <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -286,20 +117,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/controller/FencersController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-9">
-              <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
+            <state relative-caret-position="520">
+              <caret line="121" column="31" lean-forward="true" selection-start-line="121" selection-start-column="31" selection-end-line="121" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/newFencer.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-43">
-              <caret line="50" column="91" lean-forward="true" selection-start-line="50" selection-start-column="91" selection-end-line="50" selection-end-column="91" />
             </state>
           </provider>
         </entry>
@@ -307,8 +129,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/static/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="40" column="24" lean-forward="true" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+            <state relative-caret-position="255">
+              <caret line="92" column="21" lean-forward="true" selection-start-line="92" selection-start-column="21" selection-end-line="92" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -316,29 +138,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/77d2076e-c0cc-4ce4-a054-4d1fa03921e9/console_1.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="57" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/controller/TournamentController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="375">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
             </state>
           </provider>
         </entry>
@@ -353,8 +154,8 @@
         <option value="HTML File" />
         <option value="CSS File" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -384,14 +185,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/startopole/StartopoleApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/startopole/controller/EmailController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/static/css/index_style.css" />
-        <option value="$PROJECT_DIR$/src/main/java/com/startopole/controller/MainController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/startopole/controller/ArticleController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/startopole/services/impl/ArticleServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/startopole/dao/impl/ArticleDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/startopole/services/CoachService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/startopole/services/AdminService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/startopole/services/impl/CoachServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/startopole/services/impl/AdminServiceImpl.java" />
@@ -422,19 +215,27 @@
         <option value="$PROJECT_DIR$/src/main/java/com/fencelive/controller/TournamentController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fencelive/controller/MainController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/fencelive/dao/FencerDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/fencelive/dao/impl/FencerDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/fencelive/services/FencerService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/fencelive/services/impl/FencerServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/fencelive/model/entity/Fencer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fencelive/model/viewModel/FencerViewModel.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/newFencer.jsp" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/77d2076e-c0cc-4ce4-a054-4d1fa03921e9/console_1.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/com/fencelive/controller/FencersController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/static/css/style.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fencers.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/static/css/style.css" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fencelive/dao/FencerDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fencelive/services/FencerService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fencelive/dao/impl/FencerDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fencelive/services/impl/FencerServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fencelive/model/entity/List.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fencelive/dao/ListDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fencelive/services/ListService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fencelive/services/impl/ListServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fencelive/controller/FencersController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fencelive/dao/impl/ListDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fencelive/controller/ListsController.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/77d2076e-c0cc-4ce4-a054-4d1fa03921e9/console_1.sql" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/lists.jsp" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -466,7 +267,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="714" />
+    <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -477,6 +278,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -676,7 +478,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -689,7 +490,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567882869017" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1568554932140" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="E:/Pobrane/slf4j-1.7.26/slf4j-1.7.26/slf4j-simple-1.7.26.jar!/" />
@@ -935,14 +736,8 @@
       <workItem from="1556141527861" duration="106354000" />
       <workItem from="1559280987346" duration="28060000" />
       <workItem from="1560612548667" duration="18802000" />
-      <workItem from="1566299300586" duration="40238000" />
-    </task>
-    <task id="LOCAL-00011" summary="Added Maven dependencies to POM">
-      <created>1553802411923</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1553802411923</updated>
+      <workItem from="1566299300586" duration="40402000" />
+      <workItem from="1567884108554" duration="9634000" />
     </task>
     <task id="LOCAL-00012" summary="Registration form working">
       <created>1554457713127</created>
@@ -1280,11 +1075,18 @@
       <option name="project" value="LOCAL" />
       <updated>1564493967152</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="Adding tournaments and fencers database">
+      <created>1567882934119</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1567882934122</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="477616000" />
+    <option name="totallyTimeSpent" value="487414000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1297,8 +1099,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22317597" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23390558" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1452,76 +1255,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Adding tournaments and fencers database" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/startopole/model/viewModel/RegistrationViewModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/startopole/model/entity/Coach.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/startopole/controller/UsersController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="87" column="62" lean-forward="true" selection-start-line="87" selection-start-column="62" selection-end-line="87" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/registration.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="78" column="15" lean-forward="true" selection-start-line="78" selection-start-column="15" selection-end-line="78" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/startopole/controller/RegistrationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="618">
-          <caret line="71" column="12" selection-start-line="71" selection-start-column="12" selection-end-line="71" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/startopole/controller/AllUsersController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1980">
-          <caret line="151" column="50" selection-start-line="151" selection-start-column="50" selection-end-line="151" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/all_users_management.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="83" column="19" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f3454ed1-fc40-4c3e-b009-1667b2250c19/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/authentication/MyDBAuthenticationService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/configuration/SpringWebAppInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/configuration/WebMvcConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1549,16 +1282,8 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/static/css/subpage.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/static/css/gallery.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/static/css/index_style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="870">
-          <caret line="58" column="20" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/static/css/gallery.css" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/static/css/index_style.css" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/dao/UserRoleDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1580,38 +1305,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/dao/impl/TournamentDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#474#475#0" expanded="true" />
-            <element signature="e#516#517#0" expanded="true" />
-            <element signature="e#595#596#0" expanded="true" />
-            <element signature="e#637#638#0" expanded="true" />
-            <element signature="e#705#706#0" expanded="true" />
-            <element signature="e#727#728#0" expanded="true" />
-            <element signature="e#450#451#0" expanded="true" />
-            <element signature="e#477#478#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/services/UserInfoService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/services/TournamentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1638,16 +1335,6 @@
             <element signature="e#994#995#0" expanded="true" />
             <element signature="e#552#553#0" expanded="true" />
             <element signature="e#579#580#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/dao/TournamentDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="36" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1690,13 +1377,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/datasource-cfg.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/model/entity/Tournament.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="489">
@@ -1707,119 +1387,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/dao/impl/FencerDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="106" selection-start-line="38" selection-start-column="106" selection-end-line="38" selection-end-column="106" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#450#451#0" expanded="true" />
-            <element signature="e#475#476#0" expanded="true" />
-            <element signature="e#559#560#0" expanded="true" />
-            <element signature="e#581#582#0" expanded="true" />
-            <element signature="e#665#666#0" expanded="true" />
-            <element signature="e#717#718#0" expanded="true" />
-            <element signature="e#410#411#0" expanded="true" />
-            <element signature="e#437#438#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/dao/FencerDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/services/FencerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/services/impl/FencerServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" column="33" lean-forward="true" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#554#555#0" expanded="true" />
-            <element signature="e#575#576#0" expanded="true" />
-            <element signature="e#663#664#0" expanded="true" />
-            <element signature="e#687#688#0" expanded="true" />
-            <element signature="e#768#769#0" expanded="true" />
-            <element signature="e#802#803#0" expanded="true" />
-            <element signature="e#432#433#0" expanded="true" />
-            <element signature="e#459#460#0" expanded="true" />
-            <element signature="e#999#1000#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/controller/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="51" column="29" lean-forward="true" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="57" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/static/css/buttons.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/newTournament.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/controller/TournamentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/model/entity/Fencer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="657">
-          <caret line="64" column="44" lean-forward="true" selection-start-line="64" selection-start-column="44" selection-end-line="64" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1165#1166#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1830,44 +1401,284 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/newFencer.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/controller/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-43">
-          <caret line="50" column="91" lean-forward="true" selection-start-line="50" selection-start-column="91" selection-end-line="50" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/77d2076e-c0cc-4ce4-a054-4d1fa03921e9/console_1.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/controller/FencersController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9">
-          <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
+        <state relative-caret-position="255">
+          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/newFencer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="50" column="91" selection-start-line="50" selection-start-column="91" selection-end-line="50" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/static/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="40" column="24" lean-forward="true" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+        <state relative-caret-position="255">
+          <caret line="92" column="21" lean-forward="true" selection-start-line="92" selection-start-column="21" selection-end-line="92" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/dao/FencerDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/services/FencerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/dao/impl/FencerDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="42" column="13" lean-forward="true" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/model/entity/Fencer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1127#1128#0" expanded="true" />
+            <element signature="e#1165#1166#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/model/entity/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#340#341#0" expanded="true" />
+            <element signature="e#372#373#0" expanded="true" />
+            <element signature="e#423#424#0" expanded="true" />
+            <element signature="e#456#457#0" expanded="true" />
+            <element signature="e#484#485#0" expanded="true" />
+            <element signature="e#515#516#0" expanded="true" />
+            <element signature="e#542#543#0" expanded="true" />
+            <element signature="e#582#583#0" expanded="true" />
+            <element signature="e#614#615#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/dao/TournamentDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="36" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/dao/impl/TournamentDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="38" column="100" lean-forward="true" selection-start-line="38" selection-start-column="100" selection-end-line="38" selection-end-column="100" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#474#475#0" expanded="true" />
+            <element signature="e#534#535#0" expanded="true" />
+            <element signature="e#595#596#0" expanded="true" />
+            <element signature="e#657#658#0" expanded="true" />
+            <element signature="e#705#706#0" expanded="true" />
+            <element signature="e#774#775#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/dao/ListDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="40" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="10" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/services/TournamentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/services/ListService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/services/impl/FencerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="44" column="61" lean-forward="true" selection-start-line="44" selection-start-column="61" selection-end-line="44" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/services/impl/ListServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="42" column="37" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#504#505#0" expanded="true" />
+            <element signature="e#523#524#0" expanded="true" />
+            <element signature="e#605#606#0" expanded="true" />
+            <element signature="e#639#640#0" expanded="true" />
+            <element signature="e#706#707#0" expanded="true" />
+            <element signature="e#728#729#0" expanded="true" />
+            <element signature="e#808#809#0" expanded="true" />
+            <element signature="e#847#848#0" expanded="true" />
+            <element signature="e#472#473#0" expanded="true" />
+            <element signature="e#499#500#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/datasource-cfg.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="26" lean-forward="true" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fencers.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+        <state relative-caret-position="529">
+          <caret line="127" column="7" selection-start-line="127" selection-start-column="7" selection-end-line="127" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/controller/TournamentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
           <folding>
-            <element signature="e#4008#4015#1#HTML" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/dao/impl/ListDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#414#415#0" expanded="true" />
+            <element signature="e#468#469#0" expanded="true" />
+            <element signature="e#517#518#0" expanded="true" />
+            <element signature="e#573#574#0" expanded="true" />
+            <element signature="e#621#622#0" expanded="true" />
+            <element signature="e#684#685#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/controller/FencersController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="121" column="31" lean-forward="true" selection-start-line="121" selection-start-column="31" selection-end-line="121" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/newTournament.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="38" column="24" lean-forward="true" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.7.RELEASE/spring-webmvc-5.1.7.RELEASE.jar!/org/springframework/web/servlet/config/annotation/WebMvcConfigurationSupport.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="130" column="40" selection-start-line="130" selection-start-column="40" selection-end-line="130" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/FenceliveApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="39" column="106" lean-forward="true" selection-start-line="39" selection-start-column="106" selection-end-line="39" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/77d2076e-c0cc-4ce4-a054-4d1fa03921e9/console_1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/controller/ListsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-317">
+          <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="270">
+            <caret line="18" column="77" selection-start-line="18" selection-start-column="77" selection-end-line="18" selection-end-column="77" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/lists.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="92" column="28" selection-start-line="92" selection-start-column="28" selection-end-line="92" selection-end-column="28" />
         </state>
       </provider>
     </entry>

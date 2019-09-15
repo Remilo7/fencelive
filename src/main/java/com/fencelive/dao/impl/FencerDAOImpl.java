@@ -35,6 +35,12 @@ public class FencerDAOImpl implements FencerDAO {
     }
 
     @Override
+    public List getEqualFencer(String name, String surname, int year) {
+        String sql = "FROM Fencer WHERE name='"+name+"' AND surname='"+surname+"' AND year='"+year+"'";
+        return session.getCurrentSession().createQuery(sql).list();
+    }
+
+    @Override
     public List getAllFencers() {
         return session.getCurrentSession().createQuery("FROM Fencer ORDER BY club, surname, name").list();
     }

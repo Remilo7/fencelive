@@ -1098,107 +1098,128 @@
     <table id="274" parent="3" name="FENCERS">
       <Collation>utf8mb4_bin</Collation>
     </table>
-    <table id="275" parent="3" name="TOURNAMENTS">
+    <table id="275" parent="3" name="LISTS">
       <Collation>utf8mb4_bin</Collation>
     </table>
-    <column id="276" parent="274" name="id">
+    <table id="276" parent="3" name="TOURNAMENTS">
+      <Collation>utf8mb4_bin</Collation>
+    </table>
+    <column id="277" parent="274" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="277" parent="274" name="name">
+    <column id="278" parent="274" name="name">
       <Position>2</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="278" parent="274" name="surname">
+    <column id="279" parent="274" name="surname">
       <Position>3</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="279" parent="274" name="year">
+    <column id="280" parent="274" name="year">
       <Position>4</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="280" parent="274" name="sex">
+    <column id="281" parent="274" name="sex">
       <Position>5</Position>
       <DataType>char(1)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="281" parent="274" name="club">
+    <column id="282" parent="274" name="club">
       <Position>6</Position>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="282" parent="274" name="country">
+    <column id="283" parent="274" name="country">
       <Position>7</Position>
       <DataType>varchar(3)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="283" parent="274" name="PRIMARY">
+    <key id="284" parent="274" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="284" parent="275" name="id">
+    <column id="285" parent="275" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="285" parent="275" name="name">
+    <column id="286" parent="275" name="name">
       <Position>2</Position>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="286" parent="275" name="date">
+    <key id="287" parent="275" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="288" parent="276" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="289" parent="276" name="name">
+      <Position>2</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="290" parent="276" name="date">
       <Position>3</Position>
       <DataType>date|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="287" parent="275" name="category">
+    <column id="291" parent="276" name="category">
       <Position>4</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="288" parent="275" name="sex">
+    <column id="292" parent="276" name="sex">
       <Position>5</Position>
       <DataType>char(1)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="289" parent="275" name="outamount">
+    <column id="293" parent="276" name="outamount">
       <Position>6</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="290" parent="275" name="method">
+    <column id="294" parent="276" name="method">
       <Position>7</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="291" parent="275" name="list">
+    <column id="295" parent="276" name="list">
       <Position>8</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="292" parent="275" name="PRIMARY">
+    <key id="296" parent="276" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>

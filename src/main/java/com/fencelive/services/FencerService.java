@@ -10,5 +10,6 @@ public interface FencerService {
     public void edit(Fencer fencer);
     public void delete(int id);
     public Fencer getFencer(int id);
+    public List getEqualFencer(String name, String surname, int year);
     public List getAllFencers();
 }

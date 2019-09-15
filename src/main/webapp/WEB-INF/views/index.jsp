@@ -37,7 +37,7 @@
                     <br>
                     <a href="fencers" class="btn btn-navy btn-border" role="button">Baza szermierzy</a>
                     <br>
-                    <a href="#" class="btn btn-navy btn-border" role="button">Listy klasyfikacyjne</a>
+                    <a href="lists" class="btn btn-navy btn-border" role="button">Listy klasyfikacyjne</a>
                 </div>
             </div>
 

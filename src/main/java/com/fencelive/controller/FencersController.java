@@ -83,7 +83,9 @@ public class FencersController {
 
             rowIt.next();
 
-            while(rowIt.hasNext()) {
+            boolean flag = true;
+
+            while(rowIt.hasNext() && flag) {
                 Row row = rowIt.next();
 
                 Iterator<Cell> cellIterator = row.cellIterator();
@@ -92,13 +94,25 @@ public class FencersController {
 
                 tempFencer.setSurname(cellIterator.next().toString());
                 tempFencer.setName(cellIterator.next().toString());
-                double tempYear = Double.parseDouble(cellIterator.next().toString());
-                tempFencer.setYear((int)tempYear);
-                tempFencer.setSex(cellIterator.next().toString().charAt(0));
-                tempFencer.setClub(cellIterator.next().toString());
-                tempFencer.setCountry(cellIterator.next().toString());
+                double tempYear = ParseDouble(cellIterator.next().toString());
 
-                fencerService.add(tempFencer);
+                if ((tempYear != -1) && (tempYear != 0)) {
+
+                    tempFencer.setYear((int) tempYear);
+                    tempFencer.setSex(cellIterator.next().toString().charAt(0));
+                    tempFencer.setClub(cellIterator.next().toString());
+                    tempFencer.setCountry(cellIterator.next().toString());
+
+                    List<Fencer> tempEqualFencers = fencerService.getEqualFencer(tempFencer.getName(), tempFencer.getSurname(), tempFencer.getYear());
+
+                    if (!tempEqualFencers.isEmpty())
+                        fencerService.delete(tempEqualFencers.get(0).getId());
+
+                    fencerService.add(tempFencer);
+                }
+
+                else
+                    flag = false;
             }
 
             workbook.close();
@@ -151,5 +165,16 @@ public class FencersController {
         stream.write(bytes);
         stream.flush();
         stream.close();
+    }
+
+    double ParseDouble(String strNumber) {
+        if (strNumber != null && strNumber.length() > 0) {
+            try {
+                return Double.parseDouble(strNumber);
+            } catch(Exception e) {
+                return -1;   // or some value to mark this field is wrong. or make a function validates field first ...
+            }
+        }
+        else return 0;
     }
 }

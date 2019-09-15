@@ -9,5 +9,6 @@
         <mapping class="com.fencelive.model.entity.UserInfo" />
         <mapping class="com.fencelive.model.entity.Tournament" />
         <mapping class="com.fencelive.model.entity.Fencer" />
+        <mapping class="com.fencelive.model.entity.List" />
     </session-factory>
 </hibernate-configuration>
