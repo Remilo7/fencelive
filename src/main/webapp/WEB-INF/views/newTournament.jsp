@@ -93,10 +93,7 @@
                 <div class="form-group">
                     <label for="list" class="control-label col-sm-4">Rozstawienie wg listy:</label>
                     <div class="col-sm-8">
-                        <form:select path="list">
-                            <form:option value="1">Przykładowa lista 1</form:option>
-                            <form:option value="2">Przykładowa lista 2</form:option>
-                        </form:select>
+                        <form:select path="list" items="${lists}" />
                     </div>
                 </div>
 
