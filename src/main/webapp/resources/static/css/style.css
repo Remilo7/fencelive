@@ -21,6 +21,11 @@ p {
     padding-right:0;
 }
 
+.small-padding {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .no-margin-left {
     margin-left: 0px !important;
 }
@@ -39,6 +44,10 @@ p {
 
 .header-row-medium {
     margin-bottom: 50px;
+}
+
+.header-row-small {
+    margin-bottom: 20px;
 }
 
 .container-full {
@@ -60,6 +69,10 @@ p {
 
 .contentInput {
     height: 400px !important;
+}
+
+.tournament-fencers-search {
+    margin-top: 20px;
 }
 
 /* Tabele */
@@ -91,6 +104,31 @@ p {
     overflow-y: auto;
     margin-bottom: 30px;
     margin-top: 20px;
+}
+
+.tournament-fencers-table {
+    height: 55vh;
+    overflow-y: auto;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+/* Panel z zakładkami */
+
+.panel_window {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 82vh;
+
+    -webkit-box-shadow: 0px 6px 34px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 6px 34px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 6px 34px -1px rgba(0,0,0,0.75);
+}
+
+/* Kontenery */
+
+.tournament {
+    max-height: 100%;
 }
 
 /* Przyciski */

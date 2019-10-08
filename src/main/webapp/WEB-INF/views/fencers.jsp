@@ -32,12 +32,12 @@
 
         <div class="col-md-10 fencers">
 
-            <input class="form-control" id="myInput" type="text" placeholder="Search..">
+            <input class="form-control tournament-fencers-search" id="myInput" type="text" placeholder="Search..">
 
             <form:form action="fencers.do" method="post" modelAttribute="fencer">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="fencers-table">
+                        <div class="tournament-fencers-table">
                         <table class="table table-hover table-responsive">
                             <thead>
                             <tr>

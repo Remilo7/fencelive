@@ -12,4 +12,5 @@ public interface FencerDAO {
     public Fencer getFencer(int id);
     public List getEqualFencer(String name, String surname, int year);
     public List getAllFencers();
+    public List getCategoryFencers(int from, int to);
 }

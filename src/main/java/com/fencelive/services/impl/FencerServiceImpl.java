@@ -50,4 +50,10 @@ public class FencerServiceImpl implements FencerService {
     public List getAllFencers() {
         return fencerDAO.getAllFencers();
     }
+
+    @Override
+    @Transactional
+    public List getCategoryFencers(int from, int to) {
+        return fencerDAO.getCategoryFencers(from, to);
+    }
 }

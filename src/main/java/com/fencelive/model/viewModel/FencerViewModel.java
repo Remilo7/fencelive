@@ -10,6 +10,7 @@ public class FencerViewModel {
     private String country;
     private int year;
     private List<Integer> idList;
+    private boolean competing;
 
     public FencerViewModel() {
     }
@@ -20,6 +21,7 @@ public class FencerViewModel {
         this.club = club;
         this.country = country;
         this.year = year;
+        competing = false;
     }
 
     public int getId() {
@@ -68,5 +70,13 @@ public class FencerViewModel {
 
     public void setIdList(List<Integer> idList) {
         this.idList = idList;
+    }
+
+    public boolean getCompeting() {
+        return competing;
+    }
+
+    public void setCompeting(boolean competing) {
+        this.competing = competing;
     }
 }

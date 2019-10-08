@@ -42,6 +42,20 @@ public class FencerDAOImpl implements FencerDAO {
 
     @Override
     public List getAllFencers() {
+
         return session.getCurrentSession().createQuery("FROM Fencer ORDER BY club, surname, name").list();
+    }
+
+    @Override
+    public List getCategoryFencers(int from, int to) {
+
+        String hql = "FROM Fencer f WHERE f.year BETWEEN :fr AND :t ORDER BY club, surname, name";
+
+        List result = session.getCurrentSession().createQuery(hql)
+                .setParameter("fr", from)
+                .setParameter("t", to)
+                .list();
+
+        return result;
     }
 }
