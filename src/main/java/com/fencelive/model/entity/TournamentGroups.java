@@ -16,12 +16,16 @@ public class TournamentGroups {
     @Column
     private int group_id;
 
+    @Column
+    private int group_card;
+
     public TournamentGroups() {
     }
 
-    public TournamentGroups(Tournament tournament_id, int group_id) {
+    public TournamentGroups(Tournament tournament_id, int group_id, int group_card) {
         this.tournament_id = tournament_id;
         this.group_id = group_id;
+        this.group_card = group_card;
     }
 
     public int getId() {
@@ -46,5 +50,13 @@ public class TournamentGroups {
 
     public void setGroup_id(int group_id) {
         this.group_id = group_id;
+    }
+
+    public int getGroup_card() {
+        return group_card;
+    }
+
+    public void setGroup_card(int group_card) {
+        this.group_card = group_card;
     }
 }

@@ -1256,31 +1256,26 @@
     <column id="308" parent="277" name="fencer1_id">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="309" parent="277" name="fencer2_id">
       <Position>4</Position>
       <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="310" parent="277" name="score1">
       <Position>5</Position>
       <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="311" parent="277" name="score2">
       <Position>6</Position>
       <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="312" parent="277" name="winner_id">
       <Position>7</Position>
       <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <index id="313" parent="277" name="GROUP_FIGHTS_GID_FK">
@@ -1463,160 +1458,166 @@
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="345" parent="281" name="TOURNAMENT_GROUPS_TID_FK">
+    <column id="345" parent="281" name="group_card">
+      <Position>4</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="346" parent="281" name="TOURNAMENT_GROUPS_TID_FK">
       <ColNames>tournament_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="346" parent="281" name="PRIMARY">
+    <key id="347" parent="281" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="347" parent="281" name="TOURNAMENT_GROUPS_TID_FK">
+    <foreign-key id="348" parent="281" name="TOURNAMENT_GROUPS_TID_FK">
       <ColNames>tournament_id</ColNames>
       <RefSchemaName>qJKm6WWXvl</RefSchemaName>
       <RefTableName>TOURNAMENTS</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="348" parent="282" name="id">
+    <column id="349" parent="282" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="349" parent="282" name="tournament_id">
+    <column id="350" parent="282" name="tournament_id">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="350" parent="282" name="fencer_id">
+    <column id="351" parent="282" name="fencer_id">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="351" parent="282" name="win_amount">
+    <column id="352" parent="282" name="win_amount">
       <Position>4</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="352" parent="282" name="score">
+    <column id="353" parent="282" name="score">
       <Position>5</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="353" parent="282" name="TOURNAMENT_GROUP_CLASSLIST_TID_FK">
+    <index id="354" parent="282" name="TOURNAMENT_GROUP_CLASSLIST_TID_FK">
       <ColNames>tournament_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="354" parent="282" name="TOURNAMENT_GROUP_CLASSLIST_FID_FK">
+    <index id="355" parent="282" name="TOURNAMENT_GROUP_CLASSLIST_FID_FK">
       <ColNames>fencer_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="355" parent="282" name="PRIMARY">
+    <key id="356" parent="282" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="356" parent="282" name="TOURNAMENT_GROUP_CLASSLIST_TID_FK">
+    <foreign-key id="357" parent="282" name="TOURNAMENT_GROUP_CLASSLIST_TID_FK">
       <ColNames>tournament_id</ColNames>
       <RefSchemaName>qJKm6WWXvl</RefSchemaName>
       <RefTableName>TOURNAMENTS</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="357" parent="282" name="TOURNAMENT_GROUP_CLASSLIST_FID_FK">
+    <foreign-key id="358" parent="282" name="TOURNAMENT_GROUP_CLASSLIST_FID_FK">
       <ColNames>fencer_id</ColNames>
       <RefSchemaName>qJKm6WWXvl</RefSchemaName>
       <RefTableName>FENCERS</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="358" parent="283" name="id">
+    <column id="359" parent="283" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="359" parent="283" name="tournament_id">
+    <column id="360" parent="283" name="tournament_id">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="360" parent="283" name="fencer1_id">
+    <column id="361" parent="283" name="fencer1_id">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="361" parent="283" name="fencer2_id">
+    <column id="362" parent="283" name="fencer2_id">
       <Position>4</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="362" parent="283" name="score1">
+    <column id="363" parent="283" name="score1">
       <Position>5</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="363" parent="283" name="score2">
+    <column id="364" parent="283" name="score2">
       <Position>6</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="364" parent="283" name="winner_id">
+    <column id="365" parent="283" name="winner_id">
       <Position>7</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="365" parent="283" name="TOURNAMENT_TABLEAU_TID_FK">
+    <index id="366" parent="283" name="TOURNAMENT_TABLEAU_TID_FK">
       <ColNames>tournament_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="366" parent="283" name="TOURNAMENT_TABLEAU_FIGHTS_F1ID_FK">
+    <index id="367" parent="283" name="TOURNAMENT_TABLEAU_FIGHTS_F1ID_FK">
       <ColNames>fencer1_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="367" parent="283" name="TOURNAMENT_TABLEAU_FIGHTS_F12D_FK">
+    <index id="368" parent="283" name="TOURNAMENT_TABLEAU_FIGHTS_F12D_FK">
       <ColNames>fencer2_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="368" parent="283" name="TOURNAMENT_TABLEAU_FIGHTS_WINNERID_FK">
+    <index id="369" parent="283" name="TOURNAMENT_TABLEAU_FIGHTS_WINNERID_FK">
       <ColNames>winner_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="369" parent="283" name="PRIMARY">
+    <key id="370" parent="283" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="370" parent="283" name="TOURNAMENT_TABLEAU_TID_FK">
+    <foreign-key id="371" parent="283" name="TOURNAMENT_TABLEAU_TID_FK">
       <ColNames>tournament_id</ColNames>
       <RefSchemaName>qJKm6WWXvl</RefSchemaName>
       <RefTableName>TOURNAMENTS</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="371" parent="283" name="TOURNAMENT_TABLEAU_FIGHTS_F1ID_FK">
+    <foreign-key id="372" parent="283" name="TOURNAMENT_TABLEAU_FIGHTS_F1ID_FK">
       <ColNames>fencer1_id</ColNames>
       <RefSchemaName>qJKm6WWXvl</RefSchemaName>
       <RefTableName>FENCERS</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="372" parent="283" name="TOURNAMENT_TABLEAU_FIGHTS_F12D_FK">
+    <foreign-key id="373" parent="283" name="TOURNAMENT_TABLEAU_FIGHTS_F12D_FK">
       <ColNames>fencer2_id</ColNames>
       <RefSchemaName>qJKm6WWXvl</RefSchemaName>
       <RefTableName>FENCERS</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="373" parent="283" name="TOURNAMENT_TABLEAU_FIGHTS_WINNERID_FK">
+    <foreign-key id="374" parent="283" name="TOURNAMENT_TABLEAU_FIGHTS_WINNERID_FK">
       <ColNames>winner_id</ColNames>
       <RefSchemaName>qJKm6WWXvl</RefSchemaName>
       <RefTableName>FENCERS</RefTableName>

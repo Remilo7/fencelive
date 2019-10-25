@@ -97,4 +97,16 @@ public class Fencer {
     public void setSex(char sex) {
         this.sex = sex;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+
+        if (!(obj instanceof Fencer)) {
+            return false;
+        }
+
+        Fencer f = (Fencer)obj;
+
+        return ((name.equalsIgnoreCase(f.name)) && (surname.equalsIgnoreCase(f.surname)) && (club.equalsIgnoreCase(f.club)));
+    }
 }

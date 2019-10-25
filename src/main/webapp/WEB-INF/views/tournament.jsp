@@ -41,7 +41,9 @@
 
             <div class="tab-content">
 
-                <div id="menu1" class="tab-pane fade in active">
+                <%--Lista zawodników i potwierdzanie startujących--%>
+
+                <div id="tab1" class="tab-pane fade in active">
 
                     <input class="form-control tournament-fencers-search" id="myInput" type="text" placeholder="Search..">
 
@@ -65,7 +67,10 @@
                                             <tr>
                                                 <td>
                                                     <p style="color: forestgreen; font-weight: bold; font-size: smaller">
-                                                        <form:checkbox path="idList" value="${fencer.id}"/>
+                                                        <c:if test = "${generated == false}">
+                                                            <form:checkbox path="idList" value="${fencer.id}"/>
+                                                        </c:if>
+
                                                         <c:if test = "${fencer.competing}">
                                                             Potwierdzony
                                                         </c:if>
@@ -81,12 +86,89 @@
                                     </table>
                                 </div>
 
-                                <button class="btn btn-red btn-border pull-left no-margin-left" name="action" value="cancel">Anuluj</button>
-                                <button class="btn btn-green btn-border pull-right no-margin-left" name="action" value="confirm">Potwierdź</button>
+                                <c:if test = "${generated == false}">
+                                    <button class="btn btn-red btn-border pull-left no-margin-left" name="action" value="cancel">Anuluj</button>
+                                    <button class="btn btn-green btn-border pull-right no-margin-left" name="action" value="confirm">Potwierdź</button>
+                                </c:if>
 
                             </div>
                         </div>
                     </form:form>
+                </div>
+
+                <%--Faza grupowa--%>
+
+                <div id="tab2" class="tab-pane fade in">
+
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <c:choose>
+                                <c:when test="${generated == false}">
+                                    <div class="tournament-groups-table">
+                                        <form:form action="generateGroups" method="post">
+                                            <div class="center-wrapper">
+                                                <button class="btn btn-navy btn-border">Generuj grupy</button>
+                                            </div>
+                                        </form:form>
+                                    </div>
+                                </c:when>
+
+                                <c:otherwise>
+                                    <form:form action="groupFightsResults" method="post" modelAttribute="groupFightsForm">
+                                        <div class="tournament-groups-table">
+
+                                            <c:forEach items="${groups}" var="list" varStatus="loop">
+
+                                                <h3>Grupa ${loop.count}</h3>
+                                                <table class="table-bordered">
+                                                    <tbody>
+                                                    <th class="name-cell">Nazwisko, imię</th>
+                                                    <th class="club-cell">Klub</th>
+                                                    <th class="country-cell">Kraj</th>
+                                                    <th class="score-cell"/>
+
+                                                    <c:forEach var="i" begin = "0" end ="${list.size()-1}">
+                                                        <th class="score-cell">${i+1}</th>
+                                                    </c:forEach>
+
+                                                    <c:forEach items="${list}" var="fencer" varStatus="i">
+                                                        <tr>
+                                                            <td class="name-cell">${fencer.name}</td>
+                                                            <td class="club-cell">${fencer.club}</td>
+                                                            <td class="country-cell">${fencer.country}</td>
+                                                            <th class="score-cell">${i.count}</th>
+
+                                                                <%--Loop with cells to save scores--%>
+
+                                                            <c:forEach var="j" begin = "0" end ="${list.size()-1}">
+                                                                <c:choose>
+                                                                    <c:when test="${j>i.index}">
+                                                                        <input class="hidden" name="groupFights[${loop.index}][${i.index}][${j}].id" value="${groupFightsForm.groupFights.get(loop.index)[i.index][j].id}" />
+                                                                        <td class="score-cell"><input class="score-cell" type="text" name="groupFights[${loop.index}][${i.index}][${j}].score1" value="${groupFightsForm.groupFights.get(loop.index)[i.index][j].score1}" maxlength="2" /></td>
+                                                                    </c:when>
+                                                                    <c:when test="${j==i.index}">
+                                                                        <td bgcolor="black" class="score-cell"/>
+                                                                    </c:when>
+                                                                    <c:otherwise>
+                                                                        <input class="hidden" name="groupFights[${loop.index}][${i.index}][${j}].id" value="${groupFightsForm.groupFights.get(loop.index)[i.index][j].id}" />
+                                                                        <td class="score-cell"><input class="score-cell" type="text" name="groupFights[${loop.index}][${i.index}][${j}].score2" value="${groupFightsForm.groupFights.get(loop.index)[i.index][j].score2}" maxlength="2" /></td>
+                                                                    </c:otherwise>
+                                                                </c:choose>
+                                                            </c:forEach>
+                                                        </tr>
+                                                    </c:forEach>
+                                                    </tbody>
+                                                </table>
+                                            </c:forEach>
+                                        </div>
+
+                                        <button class="btn btn-green btn-border pull-right no-margin-left">Zapisz</button>
+                                    </form:form>
+                                </c:otherwise>
+                            </c:choose>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

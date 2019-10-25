@@ -16,6 +16,14 @@ p {
     width: 50%;
 }
 
+.center-wrapper {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .no-padding {
     padding-left:0;
     padding-right:0;
@@ -55,7 +63,7 @@ p {
     width: 100%;
 }
 
-/* Formularze */
+/* Forms */
 
 .newArticle input, textarea{
     padding: 5px;
@@ -75,7 +83,7 @@ p {
     margin-top: 20px;
 }
 
-/* Tabele */
+/* Tables */
 
 .fixed-table {
     width: 90%;
@@ -99,6 +107,54 @@ p {
     height: 40px;
 }
 
+/* Group tables */
+
+td.score-cell,
+th.score-cell,
+.score-cell input {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+}
+
+td.name-cell,
+th.name-cell {
+    width: 200px;
+    height: 35px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+td.club-cell,
+th.club-cell {
+    width: 230px;
+    height: 35px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+td.country-cell,
+th.country-cell {
+    width: 40px;
+    height: 35px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+/* Tab-pane panel */
+
+.panel_window {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 82vh;
+
+    -webkit-box-shadow: 0px 6px 34px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 6px 34px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 6px 34px -1px rgba(0,0,0,0.75);
+}
+
+/* Containers */
+
 .fencers-table {
     height: 65vh;
     overflow-y: auto;
@@ -113,25 +169,18 @@ p {
     margin-top: 15px;
 }
 
-/* Panel z zakładkami */
-
-.panel_window {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    height: 82vh;
-
-    -webkit-box-shadow: 0px 6px 34px -1px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 6px 34px -1px rgba(0,0,0,0.75);
-    box-shadow: 0px 6px 34px -1px rgba(0,0,0,0.75);
+.tournament-groups-table {
+    height: 62vh;
+    overflow-y: auto;
+    margin-bottom: 30px;
+    margin-top: 15px;
 }
-
-/* Kontenery */
 
 .tournament {
     max-height: 100%;
 }
 
-/* Przyciski */
+/* Buttons */
 
 .button-box {
     display: flex;

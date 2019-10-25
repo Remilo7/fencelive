@@ -43,6 +43,12 @@ public class GroupFights {
         this.winner_id = winner_id;
     }
 
+    public GroupFights(TournamentGroups group_id, Fencer fencer1_id, Fencer fencer2_id) {
+        this.group_id = group_id;
+        this.fencer1_id = fencer1_id;
+        this.fencer2_id = fencer2_id;
+    }
+
     public int getId() {
         return id;
     }

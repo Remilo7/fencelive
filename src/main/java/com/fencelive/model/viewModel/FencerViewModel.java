@@ -1,5 +1,7 @@
 package com.fencelive.model.viewModel;
 
+import com.fencelive.model.entity.Fencer;
+
 import java.util.List;
 
 public class FencerViewModel {
@@ -22,6 +24,14 @@ public class FencerViewModel {
         this.country = country;
         this.year = year;
         competing = false;
+    }
+
+    public FencerViewModel(Fencer fencer) {
+        id = fencer.getId();
+        name = fencer.getSurname()+" "+fencer.getName();
+        club = fencer.getClub();
+        country = fencer.getCountry();
+        year = fencer.getYear();
     }
 
     public int getId() {

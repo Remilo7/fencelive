@@ -31,6 +31,8 @@ public class FencersController {
 
     private static final String UPLOAD_DIRECTORY ="/resources/files";
 
+    // method opening fencers JSP page
+
     @RequestMapping(value = { "/fencers" }, method = RequestMethod.GET)
     public String fencerPage(Map<String, Object> map) {
 
@@ -38,8 +40,7 @@ public class FencersController {
         List<Fencer> fencers = fencerService.getAllFencers();
 
         for (Fencer fencer:fencers) {
-            fencerList.add(new FencerViewModel(fencer.getId(), fencer.getSurname()+" "+fencer.getName(), fencer.getClub(),
-                    fencer.getCountry(), fencer.getYear()));
+            fencerList.add(new FencerViewModel(fencer));
         }
 
         map.put("fencer", new FencerViewModel());
@@ -47,12 +48,16 @@ public class FencersController {
         return "fencers";
     }
 
+    // method redirecting to the newFencer JSP page
+
     @RequestMapping(value = { "/newFencer" }, method = RequestMethod.GET)
     public String newFencer(Map<String, Object> map) {
 
         map.put("fencer", new Fencer());
         return "newFencer";
     }
+
+    // method for fencers JSP page form
 
     @RequestMapping(value="/fencers.do", method= RequestMethod.POST)
     public String doActions(@ModelAttribute FencerViewModel fencer, @RequestParam String action, Map<String, Object> map,
@@ -138,6 +143,8 @@ public class FencersController {
         return "redirect:/fencers";
     }
 
+    // method adding new fencers to the database
+
     @RequestMapping(value="/addFencer", method= RequestMethod.POST)
     public String addFencer(@ModelAttribute Fencer fencer, @RequestParam String action, Map<String, Object> map) {
 
@@ -153,6 +160,8 @@ public class FencersController {
         return "redirect:/fencers";
     }
 
+    // method for uploading excel files
+
     private void fileUpload(CommonsMultipartFile file, HttpSession session) throws IOException {
 
         ServletContext context = session.getServletContext();
@@ -166,6 +175,8 @@ public class FencersController {
         stream.flush();
         stream.close();
     }
+
+    // method parsing double from string
 
     double ParseDouble(String strNumber) {
         if (strNumber != null && strNumber.length() > 0) {
