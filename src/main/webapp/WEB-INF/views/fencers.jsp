@@ -45,7 +45,7 @@
                                 <th>Nazwisko i imię</th>
                                 <th>Klub</th>
                                 <th>Kraj</th>
-                                <th>Data urodzenia</th>
+                                <th>Rok urodzenia</th>
                             </tr>
                             </thead>
 

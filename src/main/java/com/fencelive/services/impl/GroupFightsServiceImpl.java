@@ -43,8 +43,8 @@ public class GroupFightsServiceImpl implements GroupFightsService {
 
     @Override
     @Transactional
-    public List getAllFencerGroupFights(Fencer fencer) {
-        return groupFightsDAO.getAllFencerGroupFights(fencer);
+    public List getAllFencerGroupFights(Fencer fencer, List<TournamentGroups> tournamentGroups) {
+        return groupFightsDAO.getAllFencerGroupFights(fencer, tournamentGroups);
     }
 
     @Override

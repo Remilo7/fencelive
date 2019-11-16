@@ -18,19 +18,27 @@ public class TournamentGroupClassList {
     private Fencer fencer_id;
 
     @Column
-    private int win_amount;
+    private double ind1;
 
     @Column
-    private int score;
+    private int ind2;
+
+    @Column
+    private int ind3;
+
+    @Column
+    private boolean classified;
 
     public TournamentGroupClassList() {
     }
 
-    public TournamentGroupClassList(Tournament tournament_id, Fencer fencer_id, int win_amount, int score) {
+    public TournamentGroupClassList(Tournament tournament_id, Fencer fencer_id, double ind1, int ind2, int ind3, boolean classified) {
         this.tournament_id = tournament_id;
         this.fencer_id = fencer_id;
-        this.win_amount = win_amount;
-        this.score = score;
+        this.ind1 = ind1;
+        this.ind2 = ind2;
+        this.ind3 = ind3;
+        this.classified = classified;
     }
 
     public int getId() {
@@ -57,19 +65,35 @@ public class TournamentGroupClassList {
         this.fencer_id = fencer_id;
     }
 
-    public int getWin_amount() {
-        return win_amount;
+    public double getInd1() {
+        return ind1;
     }
 
-    public void setWin_amount(int win_amount) {
-        this.win_amount = win_amount;
+    public void setInd1(double ind1) {
+        this.ind1 = ind1;
     }
 
-    public int getScore() {
-        return score;
+    public int getInd2() {
+        return ind2;
     }
 
-    public void setScore(int score) {
-        this.score = score;
+    public void setInd2(int ind2) {
+        this.ind2 = ind2;
+    }
+
+    public int getInd3() {
+        return ind3;
+    }
+
+    public void setInd3(int ind3) {
+        this.ind3 = ind3;
+    }
+
+    public boolean isClassified() {
+        return classified;
+    }
+
+    public void setClassified(boolean classified) {
+        this.classified = classified;
     }
 }

@@ -1,6 +1,8 @@
 package com.fencelive.controller;
 
+import com.fencelive.comparator.ClassFencerComparator;
 import com.fencelive.model.entity.*;
+import com.fencelive.model.viewModel.ClassFencerViewModel;
 import com.fencelive.model.viewModel.FencerViewModel;
 import com.fencelive.model.viewModel.GroupFightsForm;
 import com.fencelive.model.viewModel.GroupFightsViewModel;
@@ -51,6 +53,9 @@ public class TournamentController {
     @Autowired
     GroupFightsService groupFightsService;
 
+    @Autowired
+    TournamentGroupClassListService tournamentGroupClassListService;
+
     public static int tournamentId = 1;
 
     // tournament JSP page
@@ -92,6 +97,7 @@ public class TournamentController {
         List<TournamentGroups> allTournamentGroups = tournamentGroupsService.getTournamentGroups(tournament);
         int groupsNum = allTournamentGroups.size();
         boolean generated;
+        boolean groupsFinished = false;
 
         if (groupsNum>0){
 
@@ -101,6 +107,8 @@ public class TournamentController {
 
             GroupFightsForm groupFightsForm = new GroupFightsForm();
             groupFightsForm.setGroupFights(getAllFights(allTournamentGroups));
+
+            groupsFinished = checkGroupFights(groupFightsForm.getGroupFights());
 
             map.put("groups", groups);
             map.put("list", new ArrayList());
@@ -112,11 +120,67 @@ public class TournamentController {
             generated = false;
         }
 
+        // generating ranking after groups
+
+        List<TournamentGroupClassList> groupClassification = tournamentGroupClassListService.getClassList(tournament);
+
+        if (groupsFinished && groupClassification.isEmpty()){
+
+            List<ClassFencerViewModel> fencersAfterGroups = new ArrayList<>();
+
+            // assigning indicators for each fencer
+
+            for (Fencer fencer:competingFencerList) {
+
+                ClassFencerViewModel classFencer = new ClassFencerViewModel(fencer);
+                List<GroupFights> fencerFights = groupFightsService.getAllFencerGroupFights(fencer, allTournamentGroups);
+
+                classFencer.setInd1(calcInd1(fencer, fencerFights));
+                classFencer.setInd2(calcInd23(fencer, fencerFights)[0]);
+                classFencer.setInd3(calcInd23(fencer, fencerFights)[1]);
+
+                fencersAfterGroups.add(classFencer);
+            }
+
+            // sorting fencers over ind1, ind2, ind3
+
+            Collections.sort(fencersAfterGroups, new ClassFencerComparator().reversed());
+
+            // classifying fencers
+
+            int classified = competingFencerList.size()-(competingFencerList.size()*tournament.getOutamount()/100);
+
+            for (int i=0; i<fencersAfterGroups.size(); i++) {
+
+                if (i <= classified)
+                    fencersAfterGroups.get(i).setClassified(true);
+
+                else
+                    fencersAfterGroups.get(i).setClassified(false);
+            }
+
+            // adding after-group classification to the database
+
+            for (ClassFencerViewModel fencer:fencersAfterGroups) {
+
+                TournamentGroupClassList tcl = new TournamentGroupClassList(tournament,fencerService.getFencer(fencer.getId()),fencer.getInd1(),
+                        fencer.getInd2(),fencer.getInd3(),fencer.isClassified());
+
+                tournamentGroupClassListService.add(tcl);
+            }
+
+            groupClassification = tournamentGroupClassListService.getClassList(tournament);
+        }
+
         map.put("fencer", new FencerViewModel());
         map.put("fencerList", fencerList);
         map.put("tournament", tournament.getName());
 
         map.put("generated", generated);
+        map.put("groupsFinished", groupsFinished);
+
+        map.put("groupClassList", new TournamentGroupClassList());
+        map.put("groupClassification", groupClassification);
 
         return "tournament";
     }
@@ -566,5 +630,79 @@ public class TournamentController {
         }
 
         return allFights;
+    }
+
+    // method checking if all group fights are done
+
+    private boolean checkGroupFights (List<GroupFightsViewModel [][]> allGroups){
+
+        for (GroupFightsViewModel [][] group:allGroups) {
+            for (int i=0; i<group.length; i++){
+                for (int j=i+1; j<group.length; j++){
+                    if ((group[i][j].getScore1() == null) || (group[i][j].getScore1().isEmpty())){
+                        return false;
+                    }
+                }
+            }
+        }
+
+        return true;
+    }
+
+    // method calculating fencer's V/M indicator
+
+    private double calcInd1(Fencer fencer, List<GroupFights> fencerFights) {
+
+        double v = 0;
+        double m = fencerFights.size();
+
+        for (GroupFights fight:fencerFights) {
+            if (fight.getWinner_id().getId() == fencer.getId())
+                v++;
+        }
+
+        return v/m;
+    }
+
+    // method calculating fencer's TD-TR and TD indicators
+
+    private int [] calcInd23(Fencer fencer, List<GroupFights> fencerFights) {
+
+        int [] res = new int[2];
+
+        int td = 0;
+        int tr = 0;
+
+        for (GroupFights fight:fencerFights) {
+
+            if (fight.getFencer1_id().getId() == fencer.getId()){
+                if (fight.getWinner_id().getId() == fencer.getId()){
+                    td += fight.getScore1();
+                    tr += fight.getScore2();
+                }
+
+                else {
+                    td += fight.getScore2();
+                    tr += fight.getScore1();
+                }
+            }
+
+            else {
+                if (fight.getWinner_id().getId() == fencer.getId()){
+                    td += fight.getScore2();
+                    tr += fight.getScore1();
+                }
+
+                else {
+                    td += fight.getScore1();
+                    tr += fight.getScore2();
+                }
+            }
+        }
+
+        res[0] = td;
+        res[1] = tr;
+
+        return res;
     }
 }

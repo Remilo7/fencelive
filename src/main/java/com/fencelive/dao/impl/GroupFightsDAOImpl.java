@@ -3,6 +3,7 @@ package com.fencelive.dao.impl;
 import com.fencelive.dao.GroupFightsDAO;
 import com.fencelive.model.entity.Fencer;
 import com.fencelive.model.entity.GroupFights;
+import com.fencelive.model.entity.Tournament;
 import com.fencelive.model.entity.TournamentGroups;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,12 +38,13 @@ public class GroupFightsDAOImpl implements GroupFightsDAO {
     }
 
     @Override
-    public List getAllFencerGroupFights(Fencer fencer) {
+    public List getAllFencerGroupFights(Fencer fencer, List<TournamentGroups> tournamentGroups) {
 
-        String hql = "FROM GroupFights gf WHERE gf.fencer1_id = :fid OR gf.fencer2_id = :fid";
+        String hql = "FROM GroupFights gf WHERE gf.fencer1_id = :fid OR gf.fencer2_id = :fid AND gf.group_id IN (:tourGroups)";
 
         List result = session.getCurrentSession().createQuery(hql)
                 .setParameter("fid", fencer)
+                .setParameterList("tourGroups", tournamentGroups)
                 .list();
 
         return result;

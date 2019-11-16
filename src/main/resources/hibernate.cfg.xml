@@ -17,5 +17,6 @@
         <mapping class="com.fencelive.model.entity.TournamentGroupClassList" />
         <mapping class="com.fencelive.model.entity.TournamentGroups" />
         <mapping class="com.fencelive.model.entity.TournamentTableauFights" />
+        <mapping class="com.fencelive.model.entity.TournamentGroupClassList" />
     </session-factory>
 </hibernate-configuration>

@@ -163,13 +163,70 @@
                                             </c:forEach>
                                         </div>
 
-                                        <button class="btn btn-green btn-border pull-right no-margin-left">Zapisz</button>
+                                        <c:if test = "${groupsFinished == false}">
+                                            <button class="btn btn-green btn-border pull-right no-margin-left">Zapisz</button>
+                                        </c:if>
+
                                     </form:form>
                                 </c:otherwise>
                             </c:choose>
                         </div>
                     </div>
                 </div>
+
+                <%--Klasyfikacja po grupach--%>
+
+                <div id="tab3" class="tab-pane fade in">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="tournament-fencers-table">
+                                <table class="table table-hover table-responsive">
+                                    <thead>
+                                    <tr>
+                                        <th>Miejsce</th>
+                                        <th>Nazwisko i imię</th>
+                                        <th>Klub</th>
+                                        <th>Kraj</th>
+                                        <th>V/M</th>
+                                        <th>TD-TR</th>
+                                        <th>TD</th>
+                                        <th>Zakwalifikowany</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <c:forEach items="${groupClassification}" var="fencer" varStatus="loop">
+                                        <tr>
+                                            <td>${loop.count}</td>
+                                            <td>${fencer.fencer_id.surname} ${fencer.fencer_id.name}</td>
+                                            <td>${fencer.fencer_id.club}</td>
+                                            <td>${fencer.fencer_id.country}</td>
+                                            <td>${fencer.ind1}</td>
+                                            <td>${fencer.ind2}</td>
+                                            <td>${fencer.ind3}</td>
+                                            <td>
+                                                <c:choose>
+                                                    <c:when test="${fencer.classified == true}">
+                                                        <p style="color: forestgreen; font-weight: bold; font-size: smaller">
+                                                            TAK
+                                                        </p>
+                                                    </c:when>
+                                                    <c:otherwise>
+                                                        <p style="color: darkred; font-weight: bold; font-size: smaller">
+                                                            NIE
+                                                        </p>
+                                                    </c:otherwise>
+                                                </c:choose>
+                                            </td>
+                                        </tr>
+                                    </c:forEach>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

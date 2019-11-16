@@ -12,7 +12,7 @@ public interface GroupFightsDAO {
     public void edit(GroupFights groupFights);
     public void delete(int id);
     public GroupFights getGroupFight(int id);
-    public List getAllFencerGroupFights(Fencer fencer);
+    public List getAllFencerGroupFights(Fencer fencer, List<TournamentGroups> tournamentGroups);
     public List getAllGroupFights(TournamentGroups tournamentGroups);
     public int getLastIndex();
 }
