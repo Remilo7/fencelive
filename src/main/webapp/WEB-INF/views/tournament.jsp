@@ -227,6 +227,49 @@
                     </div>
                 </div>
 
+                <%--Walki eliminacyjne--%>
+
+                <div id="tab4" class="tab-pane fade in">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form:form action="tableauFightsResults" method="post" modelAttribute="tableauFightsForm">
+                                <div class="tournament-fencers-table">
+                                    <c:forEach items="${tableauFightsForm.tableauFights}" var="fight" varStatus="loop">
+                                        <table class="table-striped">
+                                            <thead>
+                                            <tr>
+                                                <th class="name-cell">Zawodnik</th>
+                                                <th class="club-cell">Klub</th>
+                                                <th class="result-cell">Wynik</th>
+                                            </tr>
+                                            </thead>
+
+                                            <input class="hidden" name="tableauFights[${loop.index}].id" value="${fight.id}" />
+
+                                            <tbody>
+                                            <tr>
+                                                <td class="name-cell">${fight.fencer1_id.surname} ${fight.fencer1_id.name}</td>
+                                                <td class="club-cell">${fight.fencer1_id.club}</td>
+                                                <td class="result-cell"><input class="result-cell" type="text" name="tableauFights[${loop.index}].score1" value="${fight.score1}" maxlength="3" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="name-cell">${fight.fencer2_id.surname} ${fight.fencer2_id.name}</td>
+                                                <td class="club-cell">${fight.fencer2_id.club}</td>
+                                                <td class="result-cell"><input class="result-cell" type="text" name="tableauFights[${loop.index}].score2" value="${fight.score2}" maxlength="3" /></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        <hr>
+                                    </c:forEach>
+                                </div>
+
+                                <button class="btn btn-green btn-border pull-right no-margin-left">Zapisz</button>
+
+                            </form:form>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

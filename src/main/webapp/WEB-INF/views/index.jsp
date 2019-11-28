@@ -25,7 +25,7 @@
         <div class="row header-row">
             <div class="container-fluid text-center">
                 <h1>FenceLive</h1>
-                <h3>System zarządzania i transmisji zawodów szermierczych</h3>
+                <h3>System wspomagania organizacji zawodów szermierczych</h3>
             </div>
         </div>
 

@@ -13,6 +13,9 @@ public class TournamentTableauFights {
     @JoinColumn(name = "tournament_id")
     private Tournament tournament_id;
 
+    @Column
+    private int tableau;
+
     @ManyToOne
     @JoinColumn(name = "fencer1_id")
     private Fencer fencer1_id;
@@ -34,13 +37,11 @@ public class TournamentTableauFights {
     public TournamentTableauFights() {
     }
 
-    public TournamentTableauFights(Tournament tournament_id, Fencer fencer1_id, Fencer fencer2_id, int score1, int score2, Fencer winner_id) {
+    public TournamentTableauFights(Tournament tournament_id, int tableau, Fencer fencer1_id, Fencer fencer2_id) {
         this.tournament_id = tournament_id;
+        this.tableau = tableau;
         this.fencer1_id = fencer1_id;
         this.fencer2_id = fencer2_id;
-        this.score1 = score1;
-        this.score2 = score2;
-        this.winner_id = winner_id;
     }
 
     public int getId() {
@@ -57,6 +58,14 @@ public class TournamentTableauFights {
 
     public void setTournament_id(Tournament tournament_id) {
         this.tournament_id = tournament_id;
+    }
+
+    public int getTableau() {
+        return tableau;
+    }
+
+    public void setTableau(int tableau) {
+        this.tableau = tableau;
     }
 
     public Fencer getFencer1_id() {

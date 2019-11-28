@@ -141,6 +141,21 @@ th.country-cell {
     padding-right: 2px;
 }
 
+/* Tableau fights table */
+
+td.fencer-cell,
+th.fencer-cell {
+    width: 50%;
+}
+
+td.result-cell,
+th.result-cell {
+    width: 60px;
+    height: 35px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
 /* Tab-pane panel */
 
 .panel_window {

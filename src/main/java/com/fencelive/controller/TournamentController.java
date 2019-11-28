@@ -2,10 +2,7 @@ package com.fencelive.controller;
 
 import com.fencelive.comparator.ClassFencerComparator;
 import com.fencelive.model.entity.*;
-import com.fencelive.model.viewModel.ClassFencerViewModel;
-import com.fencelive.model.viewModel.FencerViewModel;
-import com.fencelive.model.viewModel.GroupFightsForm;
-import com.fencelive.model.viewModel.GroupFightsViewModel;
+import com.fencelive.model.viewModel.*;
 import com.fencelive.services.*;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
@@ -55,6 +52,12 @@ public class TournamentController {
 
     @Autowired
     TournamentGroupClassListService tournamentGroupClassListService;
+
+    @Autowired
+    TournamentTableauFightsService tournamentTableauFightsService;
+
+    @Autowired
+    TournamentFinalClassListService tournamentFinalClassListService;
 
     public static int tournamentId = 1;
 
@@ -172,6 +175,79 @@ public class TournamentController {
             groupClassification = tournamentGroupClassListService.getClassList(tournament);
         }
 
+        // tableau fights
+
+        List<TournamentTableauFights> tableauFights = tournamentTableauFightsService.getAllTournamentTableFights(tournament, 256);
+
+        if (groupsFinished) {
+
+            List<TournamentFinalClassList> finalClassification = tournamentFinalClassListService.getFinalClassList(tournament);
+
+            // straight after groups - there is no table
+
+            if (finalClassification.isEmpty()) {
+
+                createInitialFinalClassList(groupClassification);
+                finalClassification = tournamentFinalClassListService.getFinalClassList(tournament);
+
+                // finding proper first tableau
+
+                createTable(tournament, finalClassification);
+            }
+
+            // getting further
+
+            int tabSize = defineTableauSize(finalClassification.size());
+
+            int minTab = tournamentTableauFightsService.getMinTable(tournament);
+
+            if ((minTab != 0) && (minTab < tabSize))
+                tabSize = minTab;
+
+            if (tabSize != 1){
+
+                tableauFights = tournamentTableauFightsService.getAllTournamentTableFights(tournament,tabSize);
+
+                boolean check = true;
+
+                for (TournamentTableauFights fight:tableauFights) {
+                    if (fight.getWinner_id() == null)
+                        check = false;
+                }
+
+                // all fights are finished in particular tableau
+
+                if (check) {
+
+                    tabSize /= 2;
+
+                    // assigning places in classification again
+
+                    reassignPlaces(tableauFights, finalClassification);
+
+                    // getting classification cut to the tableau
+
+                    List<TournamentFinalClassList> tempClassification = tournamentFinalClassListService.getTopClassList(tournament, tabSize);
+
+                    // generating next fights
+
+                    createTable(tournament, tempClassification);
+
+                    // loading new tableau Fights
+
+                    tableauFights = tournamentTableauFightsService.getAllTournamentTableFights(tournament, tabSize);
+                }
+
+                // tableau not finished
+
+                else {
+
+                    tableauFights = tournamentTableauFightsService.getAllTournamentTableFights(tournament, tabSize);
+                }
+            }
+
+        }
+
         map.put("fencer", new FencerViewModel());
         map.put("fencerList", fencerList);
         map.put("tournament", tournament.getName());
@@ -181,6 +257,8 @@ public class TournamentController {
 
         map.put("groupClassList", new TournamentGroupClassList());
         map.put("groupClassification", groupClassification);
+
+        map.put("tableauFightsForm", new TableauFightsForm(getTransformedTableauFights(tableauFights)));
 
         return "tournament";
     }
@@ -350,7 +428,7 @@ public class TournamentController {
         return "redirect:/tournament";
     }
 
-    // method for groups form
+    // method for group fights form
 
     @RequestMapping(value="/groupFightsResults", method= RequestMethod.POST)
     public String groupFightsResults(@ModelAttribute GroupFightsForm groupFightsForm){
@@ -397,6 +475,49 @@ public class TournamentController {
                         groupFightsService.edit(fight);
                     }
                 }
+            }
+        }
+
+        return "redirect:/tournament";
+    }
+
+    // method for tableau fights form
+
+    @RequestMapping(value="/tableauFightsResults", method= RequestMethod.POST)
+    public String tableauFightsResults(@ModelAttribute TableauFightsForm tableauFightsForm){
+
+        List<GroupFightsViewModel> tableauFights = tableauFightsForm.getTableauFights();
+
+        for (GroupFightsViewModel fight:tableauFights) {
+
+            if ((fight.getScore1() != null) && (!fight.getScore1().isEmpty())) {
+
+                TournamentTableauFights fightDB = tournamentTableauFightsService.getTournamentTableFight(fight.getId());
+
+                TournamentTableauFights tempFight = new TournamentTableauFights();
+
+                tempFight.setId(fightDB.getId());
+                tempFight.setTableau(fightDB.getTableau());
+                tempFight.setTournament_id(fightDB.getTournament_id());
+                tempFight.setFencer1_id(fightDB.getFencer1_id());
+                tempFight.setFencer2_id(fightDB.getFencer2_id());
+
+                String score1 = fight.getScore1();
+                String score2 = fight.getScore2();
+
+                int score1Int = Integer.parseInt(score1.substring(1));
+                int score2Int = Integer.parseInt(score2.substring(1));
+
+                tempFight.setScore1(score1Int);
+                tempFight.setScore2(score2Int);
+
+                if (score1.charAt(0) == 'V')
+                    tempFight.setWinner_id(fightDB.getFencer1_id());
+
+                else if (score2.charAt(0) == 'V')
+                    tempFight.setWinner_id(fightDB.getFencer2_id());
+
+                tournamentTableauFightsService.edit(tempFight);
             }
         }
 
@@ -632,6 +753,22 @@ public class TournamentController {
         return allFights;
     }
 
+    // method getting tableau fights for particular tournament
+
+    private List<GroupFightsViewModel> getTransformedTableauFights(List<TournamentTableauFights> tableauFights){
+
+        List<GroupFightsViewModel> fights = new ArrayList<>();
+
+        for (TournamentTableauFights fight:tableauFights) {
+
+            GroupFightsViewModel tempFight = new GroupFightsViewModel(fight);
+
+            fights.add(tempFight);
+        }
+
+        return fights;
+    }
+
     // method checking if all group fights are done
 
     private boolean checkGroupFights (List<GroupFightsViewModel [][]> allGroups){
@@ -700,9 +837,160 @@ public class TournamentController {
             }
         }
 
-        res[0] = td;
-        res[1] = tr;
+        res[0] = td-tr;
+        res[1] = td;
 
         return res;
+    }
+
+    // method creating initial final classification list
+
+    private void createInitialFinalClassList(List<TournamentGroupClassList> groupClassification) {
+
+        List<TournamentFinalClassList> finalClassification = new ArrayList<>();
+
+        for (int i=0; i<groupClassification.size(); i++) {
+
+            TournamentGroupClassList position = groupClassification.get(i);
+
+            if (position.isClassified()) {
+                TournamentFinalClassList newPosition = new TournamentFinalClassList(position.getTournament_id(), position.getFencer_id(), i + 1);
+                tournamentFinalClassListService.add(newPosition);
+            }
+
+        }
+    }
+
+    // method creating fights for tableau
+
+    private void createTable(Tournament tournament, List<TournamentFinalClassList> classification) {
+
+        // defining the proper tableau
+
+        int n = defineTableauSize(classification.size());
+
+        // creating fights in tableau and assigning fencers to them
+
+        for (int i=0; i<n/2; i++){
+
+            int f1 = i+1;
+            int f2 = (n-f1)+1;
+
+            Fencer fencer1 = null;
+            Fencer fencer2 = null;
+
+            for (TournamentFinalClassList place:classification) {
+
+                if (place.getPlace() == f1)
+                    fencer1 = place.getFencer_id();
+
+                if (place.getPlace() == f2)
+                    fencer2 = place.getFencer_id();
+            }
+
+            TournamentTableauFights fight = new TournamentTableauFights();
+
+            fight.setTournament_id(tournament);
+            fight.setTableau(n);
+
+            if (fencer1 == null){
+                fight.setFencer2_id(fencer2);
+                fight.setWinner_id(fencer2);
+            }
+
+            else if (fencer2 == null){
+                fight.setFencer1_id(fencer1);
+                fight.setWinner_id(fencer1);
+            }
+
+            else {
+                fight.setFencer1_id(fencer1);
+                fight.setFencer2_id(fencer2);
+            }
+
+            // inserting fight to the database
+
+            tournamentTableauFightsService.add(fight);
+        }
+    }
+
+    // method defining tableau size
+
+    private int defineTableauSize(int size){
+
+        int n = 0;
+
+        if (size>64 && size<=128)
+            n = 128;
+
+        else if (size>32 && size<=64)
+            n = 64;
+
+        else if (size>16 && size<=32)
+            n = 32;
+
+        else if (size>8 && size<=16)
+            n = 16;
+
+        else if (size>4 && size<=8)
+            n = 8;
+
+        else if (size>2 && size<=4)
+            n = 4;
+
+        else if (size>1 && size<=2)
+            n = 2;
+
+        return n;
+    }
+
+    // method assigning places in classification after finishing particular tableau fights
+
+    private void reassignPlaces(List<TournamentTableauFights> fights, List<TournamentFinalClassList> classification) {
+
+        for (TournamentTableauFights fight:fights) {
+
+            Fencer f1 = null;
+            Fencer f2 = null;
+
+            TournamentFinalClassList place1 = null;
+            TournamentFinalClassList place2 = null;
+
+            for (TournamentFinalClassList place:classification) {
+
+                if (fight.getWinner_id().getId() == place.getFencer_id().getId()){
+                    f1 = place.getFencer_id();
+                    place1 = place;
+                }
+
+                if ((fight.getFencer1_id().getId() != fight.getWinner_id().getId()) && (fight.getFencer1_id().getId() == place.getFencer_id().getId())){
+                    f2 = place.getFencer_id();
+                    place2 = place;
+                }
+
+                if (fight.getFencer2_id() != null) {
+
+                    if ((fight.getFencer2_id().getId() != fight.getWinner_id().getId()) && (fight.getFencer2_id().getId() == place.getFencer_id().getId())) {
+                        f2 = place.getFencer_id();
+                        place2 = place;
+                    }
+                }
+            }
+
+            if (place2 != null) {
+
+                if (place1.getPlace() > place2.getPlace()) {
+
+                    int place1_int = place1.getPlace();
+                    int place2_int = place2.getPlace();
+
+                    place1.setPlace(place2_int);
+                    place2.setPlace(place1_int);
+
+                    tournamentFinalClassListService.edit(place1);
+                    tournamentFinalClassListService.edit(place2);
+                }
+            }
+        }
     }
 }

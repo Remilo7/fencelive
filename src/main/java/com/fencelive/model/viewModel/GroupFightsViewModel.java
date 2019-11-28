@@ -3,6 +3,7 @@ package com.fencelive.model.viewModel;
 import com.fencelive.model.entity.Fencer;
 import com.fencelive.model.entity.GroupFights;
 import com.fencelive.model.entity.TournamentGroups;
+import com.fencelive.model.entity.TournamentTableauFights;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -11,6 +12,7 @@ public class GroupFightsViewModel {
 
     private int id;
     private TournamentGroups group_id;
+    private int tableau;
     private Fencer fencer1_id;
     private Fencer fencer2_id;
     private String score1;
@@ -28,6 +30,20 @@ public class GroupFightsViewModel {
         if (groupFights.getWinner_id() != null){
 
             Map<String,String> map = getScores(groupFights);
+            score1 = map.get("score1");
+            score2 = map.get("score2");
+        }
+    }
+
+    public GroupFightsViewModel(TournamentTableauFights tableauFights){
+        id = tableauFights.getId();
+        tableau = tableauFights.getTableau();
+        fencer1_id = tableauFights.getFencer1_id();
+        fencer2_id = tableauFights.getFencer2_id();
+
+        if (tableauFights.getWinner_id() != null){
+
+            Map<String,String> map = getScores(tableauFights);
             score1 = map.get("score1");
             score2 = map.get("score2");
         }
@@ -81,6 +97,14 @@ public class GroupFightsViewModel {
         this.score2 = score2;
     }
 
+    public int getTableau() {
+        return tableau;
+    }
+
+    public void setTableau(int tableau) {
+        this.tableau = tableau;
+    }
+
     private Map<String, String> getScores(GroupFights groupFights) {
 
         String score1 = "";
@@ -94,6 +118,28 @@ public class GroupFightsViewModel {
         else if (groupFights.getFencer2_id().equals(groupFights.getWinner_id())){
             score1 = "D"+groupFights.getScore1();
             score2 = "V"+groupFights.getScore2();
+        }
+
+        Map<String, String> map = new HashMap<>();
+        map.put("score1",score1);
+        map.put("score2",score2);
+
+        return map;
+    }
+
+    private Map<String, String> getScores(TournamentTableauFights tableauFights) {
+
+        String score1 = "";
+        String score2 = "";
+
+        if (tableauFights.getFencer1_id().equals(tableauFights.getWinner_id())){
+            score1 = "V"+tableauFights.getScore1();
+            score2 = "D"+tableauFights.getScore2();
+        }
+
+        else if (tableauFights.getFencer2_id().equals(tableauFights.getWinner_id())){
+            score1 = "D"+tableauFights.getScore1();
+            score2 = "V"+tableauFights.getScore2();
         }
 
         Map<String, String> map = new HashMap<>();
