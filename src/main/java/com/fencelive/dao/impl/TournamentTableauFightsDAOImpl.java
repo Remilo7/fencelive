@@ -1,6 +1,7 @@
 package com.fencelive.dao.impl;
 
 import com.fencelive.dao.TournamentTableauFightsDAO;
+import com.fencelive.model.entity.Fencer;
 import com.fencelive.model.entity.Tournament;
 import com.fencelive.model.entity.TournamentTableauFights;
 import org.hibernate.SessionFactory;
@@ -55,6 +56,20 @@ public class TournamentTableauFightsDAOImpl implements TournamentTableauFightsDA
 
         java.util.List result = session.getCurrentSession().createQuery(hql)
                 .setParameter("tid", tournament.getId())
+                .list();
+
+        return (int)result.get(0);
+    }
+
+    @Override
+    public int getFencerMinTable(Tournament tournament, Fencer fencer) {
+
+        String hql = "SELECT MIN(tableau) FROM TournamentTableauFights ttf WHERE ttf.tournament_id.id = :tid AND ttf.fencer1_id.id = :fid " +
+                "OR ttf.fencer2_id = :fid";
+
+        java.util.List result = session.getCurrentSession().createQuery(hql)
+                .setParameter("tid", tournament.getId())
+                .setParameter("fid", fencer.getId())
                 .list();
 
         return (int)result.get(0);

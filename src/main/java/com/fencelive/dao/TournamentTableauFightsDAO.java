@@ -1,5 +1,6 @@
 package com.fencelive.dao;
 
+import com.fencelive.model.entity.Fencer;
 import com.fencelive.model.entity.Tournament;
 import com.fencelive.model.entity.TournamentTableauFights;
 
@@ -13,4 +14,5 @@ public interface TournamentTableauFightsDAO {
     public TournamentTableauFights getTournamentTableFight(int id);
     public List getAllTournamentTableFights(Tournament tournament, int table);
     public int getMinTable(Tournament tournament);
+    public int getFencerMinTable(Tournament tournament, Fencer fencer);
 }

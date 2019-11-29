@@ -31,6 +31,11 @@ public class TournamentFinalClassListDAOImpl implements TournamentFinalClassList
     }
 
     @Override
+    public void clear() {
+        session.getCurrentSession().createQuery("DELETE FROM TournamentFinalClassList ").executeUpdate();
+    }
+
+    @Override
     public TournamentFinalClassList getTournamentGroupClassList(int id) {
         return session.getCurrentSession().get(TournamentFinalClassList.class, id);
     }

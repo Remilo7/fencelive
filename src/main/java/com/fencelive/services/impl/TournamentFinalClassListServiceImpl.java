@@ -36,6 +36,12 @@ public class TournamentFinalClassListServiceImpl implements TournamentFinalClass
 
     @Override
     @Transactional
+    public void clear() {
+        tournamentFinalClassListDAO.clear();
+    }
+
+    @Override
+    @Transactional
     public TournamentFinalClassList getTournamentGroupClassList(int id) {
         return tournamentFinalClassListDAO.getTournamentGroupClassList(id);
     }

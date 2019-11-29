@@ -263,9 +263,43 @@
                                     </c:forEach>
                                 </div>
 
-                                <button class="btn btn-green btn-border pull-right no-margin-left">Zapisz</button>
+                                <c:if test = "${tableauFinished == false}">
+                                    <button class="btn btn-green btn-border pull-right no-margin-left">Zapisz</button>
+                                </c:if>
 
                             </form:form>
+                        </div>
+                    </div>
+                </div>
+
+                <%--Klasyfikacja końcowa--%>
+
+                <div id="tab5" class="tab-pane fade in">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="tournament-fencers-table">
+                                <table class="table table-hover table-responsive">
+                                    <thead>
+                                    <tr>
+                                        <th>Miejsce</th>
+                                        <th>Nazwisko i imię</th>
+                                        <th>Klub</th>
+                                        <th>Kraj</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <c:forEach items="${finalClassification}" var="fencer">
+                                        <tr>
+                                            <td>${fencer.place}</td>
+                                            <td>${fencer.fencer_id.surname} ${fencer.fencer_id.name}</td>
+                                            <td>${fencer.fencer_id.club}</td>
+                                            <td>${fencer.fencer_id.country}</td>
+                                        </tr>
+                                    </c:forEach>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>

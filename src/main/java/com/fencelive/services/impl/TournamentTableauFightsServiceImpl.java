@@ -1,6 +1,7 @@
 package com.fencelive.services.impl;
 
 import com.fencelive.dao.TournamentTableauFightsDAO;
+import com.fencelive.model.entity.Fencer;
 import com.fencelive.model.entity.Tournament;
 import com.fencelive.model.entity.TournamentTableauFights;
 import com.fencelive.services.TournamentTableauFightsService;
@@ -50,5 +51,11 @@ public class TournamentTableauFightsServiceImpl implements TournamentTableauFigh
     @Transactional
     public int getMinTable(Tournament tournament) {
         return tournamentTableauFightsDAO.getMinTable(tournament);
+    }
+
+    @Override
+    @Transactional
+    public int getFencerMinTable(Tournament tournament, Fencer fencer) {
+        return tournamentTableauFightsDAO.getFencerMinTable(tournament, fencer);
     }
 }
