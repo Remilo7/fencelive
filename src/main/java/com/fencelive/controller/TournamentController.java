@@ -62,12 +62,15 @@ public class TournamentController {
     @Autowired
     TournamentFinalClassListService tournamentFinalClassListService;
 
-    public static int tournamentId = 1;
+    private int tournamentId;
 
     // tournament JSP page
 
-    @RequestMapping("/tournament")
-    public String tournament(Map<String, Object> map){
+    @RequestMapping(value = "/tournament", method = RequestMethod.GET)
+    public String tournament(Map<String, Object> map, @RequestParam(value = "tId", required = false) int tournId){
+
+        if (tournId != 0)
+            tournamentId = tournId;
 
         Tournament tournament = tournamentService.getTournament(tournamentId);
 

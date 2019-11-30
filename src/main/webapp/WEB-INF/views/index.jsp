@@ -51,6 +51,7 @@
                             <th>Kategoria</th>
                             <th>Płeć</th>
                             <th>Data</th>
+                            <th/>
                         </tr>
                     </thead>
 
@@ -58,9 +59,10 @@
                         <tbody>
                             <tr>
                                 <td>${tournament.name}</td>
-                                <td>${tournament.category}</td>
+                                <td>${categories.get(tournament.category-1).name}</td>
                                 <td>${tournament.sex}</td>
                                 <td>${tournament.date}</td>
+                                <td><a href="tournament?tId=${tournament.id}"><button class="btn btn-green btn-border">Przejdź</button></a></td>
                             </tr>
                         </tbody>
                     </c:forEach>
