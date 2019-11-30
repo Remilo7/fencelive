@@ -25,11 +25,9 @@ public class MainController {
     @RequestMapping(value = { "/", "/index" }, method = RequestMethod.GET)
     public String indexPage(Map<String, Object> map) {
 
-        List<Category> categories = categoryService.getAllCategories();
-
         map.put("tournament", new Tournament());
         map.put("tournamentList", tournamentService.getAllTournaments());
-        map.put("categories", categories);
+        map.put("categories", categoryService.getAllCategories());
         return "index";
     }
 }
