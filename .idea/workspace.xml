@@ -9,7 +9,8 @@
     <list default="true" id="72f61d8b-55b9-49a1-b282-c73a5e372f5b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fencelive/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fencelive/controller/TournamentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fencelive/controller/TournamentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/datasource-cfg.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/datasource-cfg.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -34,10 +35,6 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Heroku-MySQL" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="RemoteMySQL" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
@@ -59,17 +56,69 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/controller/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="25" column="54" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
+            <state relative-caret-position="285">
+              <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/controller/TournamentController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="975">
+              <caret line="382" column="118" selection-start-line="382" selection-start-column="118" selection-end-line="382" selection-end-column="118" />
+              <folding>
+                <element signature="e#1905#9872#0" />
+                <element signature="e#9922#11663#0" />
+                <element signature="e#11700#12214#0" />
+                <element signature="e#12257#13017#0" />
+                <element signature="e#13078#15677#0" />
+                <element signature="e#15720#17823#0" />
+                <element signature="e#17868#19499#0" />
+                <element signature="e#19568#19961#0" />
+                <element signature="e#20079#20891#0" />
+                <element signature="e#20975#22365#0" />
+                <element signature="e#22414#23404#0" />
+                <element signature="e#23453#24151#0" />
+                <element signature="e#24198#25000#0" />
+                <element signature="e#25068#25976#0" />
+                <element signature="e#26046#26434#0" />
+                <element signature="e#26493#26960#0" />
+                <element signature="e#27016#27321#0" />
+                <element signature="e#27387#28399#0" />
+                <element signature="e#28463#29062#0" />
+                <element signature="e#29111#30504#0" />
+                <element signature="e#30547#31032#0" />
+                <element signature="e#31130#32819#0" />
+                <element signature="e#32906#35519#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/datasource-cfg.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+            <state relative-caret-position="225">
+              <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="410">
+              <caret line="44" column="36" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1050">
+              <caret line="70" column="14" selection-start-line="70" selection-start-column="14" selection-end-line="70" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -77,7 +126,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/static/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
+            <state relative-caret-position="2325">
               <caret line="155" column="23" selection-start-line="155" selection-start-column="23" selection-end-line="155" selection-end-column="23" />
             </state>
           </provider>
@@ -86,8 +135,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/77d2076e-c0cc-4ce4-a054-4d1fa03921e9/console_1.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1965">
-              <caret line="131" column="28" selection-start-line="131" selection-start-column="28" selection-end-line="131" selection-end-column="28" />
+            <state relative-caret-position="399">
+              <caret line="140" column="40" selection-start-line="140" selection-start-column="40" selection-end-line="140" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -134,7 +183,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/fencelive/model/entity/TournamentGroups.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fencelive/dao/impl/TournamentGroupsDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fencelive/dao/TournamentGroupsDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fencelive/services/TournamentGroupsService.java" />
@@ -179,12 +227,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/fencelive/services/impl/TournamentFinalClassListServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fencelive/dao/impl/TournamentTableauFightsDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/tournament.jsp" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/77d2076e-c0cc-4ce4-a054-4d1fa03921e9/console_1.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/com/fencelive/controller/TournamentController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/77d2076e-c0cc-4ce4-a054-4d1fa03921e9/console.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/fencelive/controller/MainController.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/77d2076e-c0cc-4ce4-a054-4d1fa03921e9/console_1.sql" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/datasource-cfg.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fencelive/controller/TournamentController.java" />
       </list>
     </option>
   </component>
@@ -227,7 +276,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -342,10 +390,11 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DatabaseDriversLRU" value="mysql&#10;mariadb" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
@@ -354,7 +403,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575115656409" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575143385517" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="E:/Pobrane/slf4j-1.7.26/slf4j-1.7.26/slf4j-simple-1.7.26.jar!/" />
@@ -614,14 +663,8 @@
       <workItem from="1570012202728" duration="32641000" />
       <workItem from="1570601111095" duration="848000" />
       <workItem from="1571050615324" duration="84794000" />
-      <workItem from="1573511407020" duration="63301000" />
-    </task>
-    <task id="LOCAL-00020" summary="Gallery, user management, partial sections management.">
-      <created>1556922306357</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1556922306357</updated>
+      <workItem from="1573511407020" duration="65700000" />
+      <workItem from="1575143434065" duration="3910000" />
     </task>
     <task id="LOCAL-00021" summary="Members management">
       <created>1557066759163</created>
@@ -959,11 +1002,18 @@
       <option name="project" value="LOCAL" />
       <updated>1575110421363</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="Heroku local database config">
+      <created>1575115706982</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1575115706982</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="670625000" />
+    <option name="totallyTimeSpent" value="676934000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -987,10 +1037,9 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info id="Persistence" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="SQL Generator" weight="0.32891566" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49570817" visible="true" weight="0.3253012" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49570817" weight="0.3253012" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1005,6 +1054,7 @@
       <window_info anchor="bottom" id="Database Changes" order="14" weight="0.32891566" />
       <window_info anchor="bottom" id="Version Control" order="15" sideWeight="0.49928468" weight="0.32891566" />
       <window_info anchor="bottom" id="Database Console" order="16" sideWeight="0.49733475" weight="0.31445783" />
+      <window_info anchor="bottom" id="SQL Generator" order="17" weight="0.32891566" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1012,7 +1062,7 @@
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Bean Validation" order="6" />
-      <window_info active="true" anchor="right" id="Database" order="7" visible="true" weight="0.17167382" />
+      <window_info anchor="right" id="Database" order="7" weight="0.17167382" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="right" id="Maven Projects" order="10" />
@@ -1105,7 +1155,6 @@
       <path value="$PROJECT_DIR$" />
       <path value="$USER_HOME$/Library/Mobile Documents/com~apple~CloudDocs/Documents/PWR/VI Semestr/ZTW" />
     </ignored-roots>
-    <MESSAGE value="Back button" />
     <MESSAGE value="Small changes" />
     <MESSAGE value="ErrorPageFilter disable" />
     <MESSAGE value="ErrorPageFilter enable again" />
@@ -1130,29 +1179,10 @@
     <MESSAGE value="Tableau fights" />
     <MESSAGE value="Final classification" />
     <MESSAGE value="Main page improvements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Main page improvements" />
+    <MESSAGE value="Heroku local database config" />
+    <option name="LAST_COMMIT_MESSAGE" value="Heroku local database config" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/dao/GroupFightsDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/services/GroupFightsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="94" selection-start-line="14" selection-start-column="94" selection-end-line="14" selection-end-column="94" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/services/impl/GroupFightsServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="472">
@@ -1383,24 +1413,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/model/viewModel/FinalClassListModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="34" lean-forward="true" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/model/viewModel/FinalClassListModel.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/model/entity/TournamentGroupClassList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="36" column="8" lean-forward="true" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="155" column="23" selection-start-line="155" selection-start-column="23" selection-end-line="155" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1585,63 +1602,10 @@
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="70" column="14" lean-forward="true" selection-start-line="70" selection-start-column="14" selection-end-line="70" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/controller/TournamentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="69" column="113" selection-start-line="69" selection-start-column="113" selection-end-line="69" selection-end-column="113" />
-          <folding>
-            <element signature="e#1969#7690#0" />
-            <element signature="method#doActions#0;class#TournamentController#0" />
-            <element signature="method#newTournament#0;class#TournamentController#0" />
-            <element signature="method#doActions#1;class#TournamentController#0" />
-            <element signature="method#generateGroups#0;class#TournamentController#0" />
-            <element signature="method#groupFightsResults#0;class#TournamentController#0" />
-            <element signature="e#16622#16843#0" />
-            <element signature="method#groupsCard#0;class#TournamentController#0" />
-            <element signature="method#divideFencers#0;class#TournamentController#0" />
-            <element signature="method#readClassFencers#0;class#TournamentController#0" />
-            <element signature="method#assignFencers#0;class#TournamentController#0" />
-            <element signature="method#prepareGroups#0;class#TournamentController#0" />
-            <element signature="method#createGroupFights#0;class#TournamentController#0" />
-            <element signature="method#getAllFights#0;class#TournamentController#0" />
-            <element signature="e#23982#24121#0" />
-            <element signature="method#checkGroupFights#0;class#TournamentController#0" />
-            <element signature="method#calcInd1#0;class#TournamentController#0" />
-            <element signature="method#calcInd23#0;class#TournamentController#0" />
-            <element signature="e#23060#23681#0" />
-            <element signature="e#24063#24181#0" />
-            <element signature="e#25554#26238#0" />
-            <element signature="e#29686#31367#0" />
-            <element signature="e#32257#33359#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/tournament.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="676">
           <caret line="266" column="118" selection-start-line="266" selection-start-column="118" selection-end-line="266" selection-end-column="118" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/77d2076e-c0cc-4ce4-a054-4d1fa03921e9/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="2" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/77d2076e-c0cc-4ce4-a054-4d1fa03921e9/console_1.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1965">
-          <caret line="131" column="28" selection-start-line="131" selection-start-column="28" selection-end-line="131" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -1652,17 +1616,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/controller/MainController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="25" column="54" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
+        <state relative-caret-position="1050">
+          <caret line="70" column="14" selection-start-line="70" selection-start-column="14" selection-end-line="70" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2325">
+          <caret line="155" column="23" selection-start-line="155" selection-start-column="23" selection-end-line="155" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/77d2076e-c0cc-4ce4-a054-4d1fa03921e9/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="2" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/640c70ee-d9de-4ecf-81ce-c626e7da63db/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/77d2076e-c0cc-4ce4-a054-4d1fa03921e9/console_1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="140" column="40" selection-start-line="140" selection-start-column="40" selection-end-line="140" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="44" column="36" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/datasource-cfg.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        <state relative-caret-position="225">
+          <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/controller/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fencelive/controller/TournamentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="382" column="118" selection-start-line="382" selection-start-column="118" selection-end-line="382" selection-end-column="118" />
+          <folding>
+            <element signature="e#1905#9872#0" />
+            <element signature="e#9922#11663#0" />
+            <element signature="e#11700#12214#0" />
+            <element signature="e#12257#13017#0" />
+            <element signature="e#13078#15677#0" />
+            <element signature="e#15720#17823#0" />
+            <element signature="e#17868#19499#0" />
+            <element signature="e#19568#19961#0" />
+            <element signature="e#20079#20891#0" />
+            <element signature="e#20975#22365#0" />
+            <element signature="e#22414#23404#0" />
+            <element signature="e#23453#24151#0" />
+            <element signature="e#24198#25000#0" />
+            <element signature="e#25068#25976#0" />
+            <element signature="e#26046#26434#0" />
+            <element signature="e#26493#26960#0" />
+            <element signature="e#27016#27321#0" />
+            <element signature="e#27387#28399#0" />
+            <element signature="e#28463#29062#0" />
+            <element signature="e#29111#30504#0" />
+            <element signature="e#30547#31032#0" />
+            <element signature="e#31130#32819#0" />
+            <element signature="e#32906#35519#0" />
+          </folding>
         </state>
       </provider>
     </entry>

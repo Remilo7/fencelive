@@ -67,9 +67,9 @@ public class TournamentController {
     // tournament JSP page
 
     @RequestMapping(value = "/tournament", method = RequestMethod.GET)
-    public String tournament(Map<String, Object> map, @RequestParam(value = "tId", required = false) int tournId){
+    public String tournament(Map<String, Object> map, @RequestParam(value = "tId", required = false) Integer tournId){
 
-        if (tournId != 0)
+        if ((tournId != null) && (tournId != 0))
             tournamentId = tournId;
 
         Tournament tournament = tournamentService.getTournament(tournamentId);
@@ -332,7 +332,7 @@ public class TournamentController {
         }
 
         map.put("fencer", fencerResult);
-        return "redirect:/tournament";
+        return "redirect:/tournament?tId="+tournamentId;
     }
 
     // newTournament JSP page
@@ -391,6 +391,13 @@ public class TournamentController {
         if (allFencers.size() < 12){
 
             tournamentGroupsService.add(tournament, 1, allFencers.size());
+            int idx = tournamentGroupsService.getLastIndex();
+            TournamentGroups tg = tournamentGroupsService.getTournamentGroup(idx);
+
+            for (Fencer fenc:allFencers){
+
+                groupFencersService.add(new GroupFencers(tg,fenc));
+            }
         }
 
         else {
@@ -448,7 +455,7 @@ public class TournamentController {
             createGroupFights(groups);
         }
 
-        return "redirect:/tournament";
+        return "redirect:/tournament?tId="+tournamentId;
     }
 
     // method for group fights form
@@ -501,7 +508,7 @@ public class TournamentController {
             }
         }
 
-        return "redirect:/tournament";
+        return "redirect:/tournament?tId="+tournamentId;
     }
 
     // method for tableau fights form
@@ -544,7 +551,7 @@ public class TournamentController {
             }
         }
 
-        return "redirect:/tournament";
+        return "redirect:/tournament?tId="+tournamentId;
     }
 
     // method defining number of 6-person and 7-person groups
