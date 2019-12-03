@@ -30,6 +30,12 @@ public class GroupFencersServiceImpl implements GroupFencersService {
 
     @Override
     @Transactional
+    public void deleteAll(TournamentGroups tournamentGroups) {
+        groupFencersDAO.deleteAll(tournamentGroups);
+    }
+
+    @Override
+    @Transactional
     public GroupFencers getGroupFencers(int id) {
         return groupFencersDAO.getGroupFencers(id);
     }

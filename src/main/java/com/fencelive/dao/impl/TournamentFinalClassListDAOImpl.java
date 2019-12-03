@@ -31,6 +31,19 @@ public class TournamentFinalClassListDAOImpl implements TournamentFinalClassList
     }
 
     @Override
+    public void delete(Tournament tournament) {
+
+        String hql = "SELECT tfcl.id FROM TournamentFinalClassList tfcl WHERE tfcl.tournament_id.id = :tid";
+
+        List result = session.getCurrentSession().createQuery(hql)
+                .setParameter("tid", tournament.getId())
+                .list();
+
+        for(int i=0; i<result.size(); i++)
+            delete((int)result.get(i));
+    }
+
+    @Override
     public void clear() {
         session.getCurrentSession().createQuery("DELETE FROM TournamentFinalClassList ").executeUpdate();
     }

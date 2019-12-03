@@ -35,7 +35,7 @@
                 <div class="button-box">
                     <a href="newTournament" class="btn btn-green btn-border" role="button">Nowy turniej</a>
                     <br>
-                    <a href="#" class="btn btn-blue btn-border" role="button">Zarządzaj turniejami</a>
+                    <a href="tournaments" class="btn btn-blue btn-border" role="button">Zarządzaj turniejami</a>
                     <br>
                     <a href="fencers" class="btn btn-navy btn-border" role="button">Baza szermierzy</a>
                     <br>

@@ -377,6 +377,51 @@ public class TournamentController {
         return "redirect:/index";
     }
 
+    // tournaments JSP page
+
+    @RequestMapping(value = { "/tournaments" })
+    public String tournamentsPage(Map<String, Object> map){
+
+        map.put("tournaments", tournamentService.getAllTournaments());
+        map.put("tournament", new Tournament());
+
+        map.put("categories", categoryService.getAllCategories());
+        map.put("category", new Category());
+
+        return "tournaments";
+    }
+
+    // method for managing tournaments
+    @RequestMapping(value="/manageTournaments", method= RequestMethod.POST)
+    public String manageTournaments(@ModelAttribute Tournament tournament, @RequestParam String action, Map<String, Object> map,
+                                    HttpSession session) {
+
+        if ("delete".equals(action.toLowerCase())) {
+
+            tournamentFinalClassListService.delete(tournament);
+            tournamentTableauFightsService.deleteAll(tournament);
+            tournamentGroupClassListService.delete(tournament);
+
+            List<TournamentGroups> tgs = tournamentGroupsService.getTournamentGroups(tournament);
+
+            for (TournamentGroups tg:tgs) {
+                groupFightsService.deleteAll(tg);
+                groupFencersService.deleteAll(tg);
+                tournamentGroupsService.delete(tg.getId());
+            }
+
+            tournamentFencersService.deleteAll(tournament);
+            tournamentService.delete(tournament.getId());
+
+
+        } else if ("back".equals(action.toLowerCase())) {
+
+            return "redirect:/index";
+        }
+
+        return "redirect:/tournaments";
+    }
+
     // method generating groups after clicking button
 
     @RequestMapping(value="/generateGroups", method= RequestMethod.POST)
@@ -824,8 +869,10 @@ public class TournamentController {
         double m = fencerFights.size();
 
         for (GroupFights fight:fencerFights) {
-            if (fight.getWinner_id().getId() == fencer.getId())
-                v++;
+            if ((fight != null) && (fight.getWinner_id() != null)) {
+                if (fight.getWinner_id().getId() == fencer.getId())
+                    v++;
+            }
         }
 
         return v/m;
@@ -843,26 +890,30 @@ public class TournamentController {
         for (GroupFights fight:fencerFights) {
 
             if (fight.getFencer1_id().getId() == fencer.getId()){
-                if (fight.getWinner_id().getId() == fencer.getId()){
-                    td += fight.getScore1();
-                    tr += fight.getScore2();
-                }
+                if ((fight != null) && (fight.getWinner_id() != null)) {
 
-                else {
-                    td += fight.getScore2();
-                    tr += fight.getScore1();
+                    if (fight.getWinner_id().getId() == fencer.getId()) {
+                        td += fight.getScore1();
+                        tr += fight.getScore2();
+
+                    } else {
+                        td += fight.getScore2();
+                        tr += fight.getScore1();
+                    }
                 }
             }
 
             else {
-                if (fight.getWinner_id().getId() == fencer.getId()){
-                    td += fight.getScore2();
-                    tr += fight.getScore1();
-                }
+                if ((fight != null) && (fight.getWinner_id() != null)) {
 
-                else {
-                    td += fight.getScore1();
-                    tr += fight.getScore2();
+                    if (fight.getWinner_id().getId() == fencer.getId()) {
+                        td += fight.getScore2();
+                        tr += fight.getScore1();
+
+                    } else {
+                        td += fight.getScore1();
+                        tr += fight.getScore2();
+                    }
                 }
             }
         }

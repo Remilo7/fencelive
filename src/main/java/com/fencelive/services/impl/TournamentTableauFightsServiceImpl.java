@@ -37,6 +37,12 @@ public class TournamentTableauFightsServiceImpl implements TournamentTableauFigh
 
     @Override
     @Transactional
+    public void deleteAll(Tournament tournament) {
+        tournamentTableauFightsDAO.deleteAll(tournament);
+    }
+
+    @Override
+    @Transactional
     public TournamentTableauFights getTournamentTableFight(int id) {
         return tournamentTableauFightsDAO.getTournamentTableFight(id);
     }

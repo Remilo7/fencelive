@@ -9,6 +9,7 @@ public interface GroupFencersService {
 
     public void add(GroupFencers groupFencers);
     public void delete(int id);
+    public void deleteAll(TournamentGroups tournamentGroups);
     public GroupFencers getGroupFencers(int id);
     public List getAllGroupFencers(TournamentGroups tournamentGroup);
 }

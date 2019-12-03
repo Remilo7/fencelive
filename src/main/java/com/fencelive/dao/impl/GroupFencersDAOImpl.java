@@ -26,6 +26,19 @@ public class GroupFencersDAOImpl implements GroupFencersDAO {
     }
 
     @Override
+    public void deleteAll(TournamentGroups tournamentGroup) {
+
+        String hql = "SELECT gf.id FROM GroupFencers gf WHERE gf.group_id = :gid";
+
+        List result = session.getCurrentSession().createQuery(hql)
+                .setParameter("gid", tournamentGroup)
+                .list();
+
+        for (int i=0; i<result.size(); i++)
+            delete((int)result.get(i));
+    }
+
+    @Override
     public GroupFencers getGroupFencers(int id) {
         return session.getCurrentSession().get(GroupFencers.class, id);
     }

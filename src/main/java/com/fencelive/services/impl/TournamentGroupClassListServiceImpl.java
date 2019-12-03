@@ -30,6 +30,12 @@ public class TournamentGroupClassListServiceImpl implements TournamentGroupClass
 
     @Override
     @Transactional
+    public void delete(Tournament tournament) {
+        tournamentGroupClassListDAO.delete(tournament);
+    }
+
+    @Override
+    @Transactional
     public TournamentGroupClassList getTournamentGroupClassList(int id) {
         return tournamentGroupClassListDAO.getTournamentGroupClassList(id);
     }

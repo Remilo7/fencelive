@@ -37,6 +37,12 @@ public class GroupFightsServiceImpl implements GroupFightsService {
 
     @Override
     @Transactional
+    public void deleteAll(TournamentGroups tournamentGroups) {
+        groupFightsDAO.deleteAll(tournamentGroups);
+    }
+
+    @Override
+    @Transactional
     public GroupFights getGroupFight(int id) {
         return groupFightsDAO.getGroupFight(id);
     }

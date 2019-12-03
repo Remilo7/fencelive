@@ -32,6 +32,19 @@ public class TournamentTableauFightsDAOImpl implements TournamentTableauFightsDA
     }
 
     @Override
+    public void deleteAll(Tournament tournament) {
+
+        String hql = "SELECT ttf.id FROM TournamentTableauFights ttf WHERE ttf.tournament_id.id = :tid";
+
+        java.util.List result = session.getCurrentSession().createQuery(hql)
+                .setParameter("tid", tournament.getId())
+                .list();
+
+        for(int i=0; i<result.size(); i++)
+            delete((int)result.get(i));
+    }
+
+    @Override
     public TournamentTableauFights getTournamentTableFight(int id) {
         return session.getCurrentSession().get(TournamentTableauFights.class, id);
     }

@@ -9,6 +9,7 @@ public interface TournamentFencersDAO {
 
     public void add(TournamentFencers tournament_fencers);
     public void delete(int id);
+    public void deleteAll(Tournament tournament);
     public TournamentFencers getTournamentFencers(int id);
     public List getAllTournamentFencers(Tournament tournament_id);
     public List getAllFencers(Tournament tournament_id);

@@ -26,6 +26,19 @@ public class TournamentGroupClassListDAOImpl implements TournamentGroupClassList
     }
 
     @Override
+    public void delete(Tournament tournament) {
+
+        String hql = "SELECT tcl.id FROM TournamentGroupClassList tcl WHERE tcl.tournament_id.id = :tid";
+
+        java.util.List result = session.getCurrentSession().createQuery(hql)
+                .setParameter("tid", tournament.getId())
+                .list();
+
+        for(int i=0; i<result.size(); i++)
+            delete((int)result.get(i));
+    }
+
+    @Override
     public TournamentGroupClassList getTournamentGroupClassList(int id) {
         return session.getCurrentSession().get(TournamentGroupClassList.class, id);
     }

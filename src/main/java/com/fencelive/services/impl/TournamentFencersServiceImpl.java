@@ -30,6 +30,12 @@ public class TournamentFencersServiceImpl implements TournamentFencersService {
 
     @Override
     @Transactional
+    public void deleteAll(Tournament tournament) {
+        tournamentFencersDAO.deleteAll(tournament);
+    }
+
+    @Override
+    @Transactional
     public TournamentFencers getTournamentFencers(int id) {
         return tournamentFencersDAO.getTournamentFencers(id);
     }

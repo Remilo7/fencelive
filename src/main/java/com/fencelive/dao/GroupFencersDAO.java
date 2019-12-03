@@ -9,6 +9,7 @@ public interface GroupFencersDAO {
 
     public void add(GroupFencers groupFencers);
     public void delete(int id);
+    public void deleteAll(TournamentGroups tournamentGroup);
     public GroupFencers getGroupFencers(int id);
     public List getAllGroupFencers(TournamentGroups tournamentGroup);
 }

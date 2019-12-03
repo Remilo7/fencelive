@@ -26,6 +26,19 @@ public class TournamentFencersDAOImpl implements TournamentFencersDAO {
     }
 
     @Override
+    public void deleteAll(Tournament tournament) {
+
+        String hql = "SELECT tf.id FROM TournamentFencers tf WHERE tf.tournament_id.id = :tid";
+
+        List result = session.getCurrentSession().createQuery(hql)
+                .setParameter("tid", tournament.getId())
+                .list();
+
+        for (int i=0; i<result.size(); i++)
+            delete((int)result.get(i));
+    }
+
+    @Override
     public TournamentFencers getTournamentFencers(int id) {
         return session.getCurrentSession().get(TournamentFencers.class, id);
     }

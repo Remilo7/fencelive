@@ -36,6 +36,12 @@ public class TournamentFinalClassListServiceImpl implements TournamentFinalClass
 
     @Override
     @Transactional
+    public void delete(Tournament tournament) {
+        tournamentFinalClassListDAO.delete(tournament);
+    }
+
+    @Override
+    @Transactional
     public void clear() {
         tournamentFinalClassListDAO.clear();
     }

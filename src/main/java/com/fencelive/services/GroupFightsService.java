@@ -11,6 +11,7 @@ public interface GroupFightsService {
     public void add(GroupFights groupFights);
     public void edit(GroupFights groupFights);
     public void delete(int id);
+    public void deleteAll(TournamentGroups tournamentGroups);
     public GroupFights getGroupFight(int id);
     public List getAllFencerGroupFights(Fencer fencer, List<TournamentGroups> tournamentGroups);
     public List getAllGroupFights(TournamentGroups tournamentGroups);

@@ -9,6 +9,7 @@ public interface TournamentGroupClassListService {
 
     public void add(TournamentGroupClassList tournamentGroupClassList);
     public void delete(int id);
+    public void delete(Tournament tournament);
     public TournamentGroupClassList getTournamentGroupClassList(int id);
     public List getClassList(Tournament tournament);
 }

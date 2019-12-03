@@ -33,6 +33,19 @@ public class GroupFightsDAOImpl implements GroupFightsDAO {
     }
 
     @Override
+    public void deleteAll(TournamentGroups tournamentGroups) {
+
+        String hql = "SELECT gf.id FROM GroupFights gf WHERE gf.group_id = :gid";
+
+        List result = session.getCurrentSession().createQuery(hql)
+                .setParameter("gid", tournamentGroups)
+                .list();
+
+        for (int i=0; i<result.size(); i++)
+            delete((int)result.get(i));
+    }
+
+    @Override
     public GroupFights getGroupFight(int id) {
         return session.getCurrentSession().get(GroupFights.class, id);
     }
